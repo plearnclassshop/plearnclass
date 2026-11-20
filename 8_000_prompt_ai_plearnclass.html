@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คลังสื่อการสอนและใบงาน 8,000++ สูตรลับ Prompt สื่อและใบงาน AI | PlearnClass</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700;800&family=Sarabun:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Prompt', 'sans-serif'],
+                        body: ['Sarabun', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FFFDF9;
+            background-image:
+                radial-gradient(at 0% 0%, rgba(204, 251, 241, 0.45) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(255, 237, 213, 0.45) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(204, 251, 241, 0.35) 0px, transparent 50%);
+            background-attachment: fixed;
+        }
+        .act-pill input:checked + span {
+            background-color: #0D8A8A;
+            color: #FFFFFF;
+            border-color: #0D8A8A;
+            box-shadow: 0 2px 6px rgba(13, 138, 138, 0.25);
+        }
+        .act-pill input:checked + span .chk {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased min-h-screen flex flex-col selection:bg-teal-100 selection:text-teal-900">
+
+    <!-- 1. ACCESS GATE (ระบบล็อกอิน 6 หลัก Checksum Multi-Code) -->
+    <div id="accessGate" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/75 backdrop-blur-md p-4 transition-opacity duration-300 overflow-y-auto">
+        <div class="bg-white rounded-3xl shadow-2xl max-w-md w-full p-6 sm:p-8 text-center border-4 border-teal-100 relative overflow-hidden my-auto">
+            <!-- โลโก้ PlearnClass กึ่งกลาง -->
+            <div class="flex flex-col items-center justify-center mb-4">
+                <div class="inline-flex items-center justify-center gap-3.5 mb-3 select-none">
+                    <svg class="w-12 h-14 sm:w-14 sm:h-16 flex-shrink-0" viewBox="0 0 100 115" fill="none">
+                        <path d="M18 12C18 7.58 21.58 4 26 4H54C76.09 4 94 21.91 94 44C94 66.09 76.09 84 54 84H38V99C38 105.63 32.63 111 26 111C21.58 111 18 107.42 18 103V12Z" fill="#0D8A8A"/>
+                        <circle cx="53" cy="44" r="24" fill="#FFFFFF"/>
+                        <circle cx="44" cy="41" r="3" fill="#1E293B"/>
+                        <circle cx="62" cy="41" r="3" fill="#1E293B"/>
+                        <circle cx="38" cy="47" r="4" fill="#F26444" fill-opacity="0.85"/>
+                        <circle cx="68" cy="47" r="4" fill="#F26444" fill-opacity="0.85"/>
+                        <path d="M47 47C48.5 51 57.5 51 59 47" stroke="#1E293B" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M62 91L64.5 97.5L71 100L64.5 102.5L62 109L59.5 102.5L53 100L59.5 97.5L62 91Z" fill="#FBBF24"/>
+                        <path d="M79 81L80.8 85.2L85 87L80.8 88.8L79 93L77.2 88.8L73 87L77.2 85.2L79 81Z" fill="#F59E0B"/>
+                    </svg>
+                    <div class="text-left">
+                        <div class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-none">
+                            <span class="text-[#0D8A8A]">Plearn</span><span class="text-[#F26444]">Class</span>
+                        </div>
+                        <div class="text-xs sm:text-sm font-bold text-slate-700 mt-1.5 tracking-wide">
+                            ครูเตรียมง่าย เด็กเรียนเพลิน
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ป้ายจุดขาย 2 บรรทัด -->
+                <div class="inline-flex flex-col items-center px-5 py-2 rounded-2xl bg-teal-50/90 text-[#0D8A8A] border border-teal-200 leading-tight shadow-sm">
+                    <span class="block text-xs sm:text-sm font-bold">🎨 PlearnClass Worksheet Studio</span>
+                    <span class="block text-[11px] sm:text-xs font-semibold text-[#F26444] mt-0.5">จบปัญหาภาพรก ถ่ายเอกสารเละ</span>
+                </div>
+            </div>
+
+            <!-- หัวข้อหลัก 2 บรรทัด -->
+            <h1 class="font-extrabold text-slate-800 leading-snug mb-2">
+                <span class="block text-base sm:text-xl">คลังสื่อการสอนและใบงาน 8,000++</span>
+                <span class="block text-sm sm:text-base font-bold text-[#0D8A8A] mt-1">สูตรลับ Prompt สื่อและใบงาน AI</span>
+            </h1>
+            <p class="text-slate-500 text-sm mb-6 font-body">
+                กรอกรหัสผ่าน 6 หลัก เพื่อเข้าสู่คลัง Prompt
+            </p>
+
+            <!-- ฟอร์มกรอก PIN 6 หลัก -->
+            <form id="pinForm" class="space-y-4">
+                <div class="flex justify-center gap-2 sm:gap-2.5" id="pinInputsContainer">
+                    <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]*" class="pin-box w-11 h-12 sm:w-12 sm:h-14 text-center text-xl font-bold rounded-2xl border-2 border-slate-200 focus:border-[#0D8A8A] focus:ring-4 focus:ring-teal-100 outline-none transition bg-slate-50 focus:bg-white" required>
+                    <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]*" class="pin-box w-11 h-12 sm:w-12 sm:h-14 text-center text-xl font-bold rounded-2xl border-2 border-slate-200 focus:border-[#0D8A8A] focus:ring-4 focus:ring-teal-100 outline-none transition bg-slate-50 focus:bg-white" required>
+                    <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]*" class="pin-box w-11 h-12 sm:w-12 sm:h-14 text-center text-xl font-bold rounded-2xl border-2 border-slate-200 focus:border-[#0D8A8A] focus:ring-4 focus:ring-teal-100 outline-none transition bg-slate-50 focus:bg-white" required>
+                    <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]*" class="pin-box w-11 h-12 sm:w-12 sm:h-14 text-center text-xl font-bold rounded-2xl border-2 border-slate-200 focus:border-[#0D8A8A] focus:ring-4 focus:ring-teal-100 outline-none transition bg-slate-50 focus:bg-white" required>
+                    <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]*" class="pin-box w-11 h-12 sm:w-12 sm:h-14 text-center text-xl font-bold rounded-2xl border-2 border-slate-200 focus:border-[#0D8A8A] focus:ring-4 focus:ring-teal-100 outline-none transition bg-slate-50 focus:bg-white" required>
+                    <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]*" class="pin-box w-11 h-12 sm:w-12 sm:h-14 text-center text-xl font-bold rounded-2xl border-2 border-slate-200 focus:border-[#0D8A8A] focus:ring-4 focus:ring-teal-100 outline-none transition bg-slate-50 focus:bg-white" required>
+                </div>
+
+                <p id="pinErrorMsg" class="text-rose-500 text-xs font-medium hidden">
+                    ❌ รหัสผ่านไม่ถูกต้อง กรุณาตรวจสอบรหัส 6 หลักอีกครั้ง
+                </p>
+
+                <button type="submit" class="w-full py-3.5 px-6 bg-gradient-to-r from-[#0D8A8A] to-teal-600 hover:from-teal-700 hover:to-teal-800 text-white font-semibold rounded-2xl shadow-lg shadow-teal-200 transition transform active:scale-95 text-base">
+                    ปลดล็อกเข้าสู่คลัง Prompt
+                </button>
+            </form>
+
+            <!-- ทางเข้าลับแอดมิน (คลิก PlearnClass รัวๆ 5 ครั้ง) -->
+            <p class="mt-6 pt-4 border-t border-slate-100 text-[11px] text-slate-400 font-medium select-none">
+                สร้างสรรค์และพัฒนาโดย <span onclick="handleSecretAdminTap()" class="cursor-default font-semibold text-slate-500">PlearnClass</span> · ครูเตรียมง่าย เด็กเรียนเพลิน
+            </p>
+        </div>
+    </div>
+
+    <!-- MODAL ยืนยันรหัสผ่านแอดมิน 4 หลัก (1689) -->
+    <div id="adminPinModal" class="fixed inset-0 z-[99999] hidden items-center justify-center bg-slate-900/80 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-3xl shadow-2xl max-w-sm w-full p-6 border-2 border-teal-200 relative text-center">
+            <button type="button" onclick="closeAdminPinModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center font-bold">✕</button>
+            <div class="w-12 h-12 rounded-2xl bg-teal-50 text-[#0D8A8A] flex items-center justify-center text-2xl mx-auto mb-3 border border-teal-200">🛡️</div>
+            <h3 class="font-bold text-slate-800 text-base mb-1">ยืนยันตัวตนเจ้าของร้าน</h3>
+            <p class="text-xs text-slate-500 mb-4 font-body">กรอกรหัสผ่านแอดมิน (Admin PIN) 4 หลัก</p>
+            <form id="adminPinForm" class="space-y-3">
+                <input type="password" id="adminPinInput" maxlength="4" inputmode="numeric" placeholder="••••"
+                    class="w-40 mx-auto block text-center text-2xl font-bold tracking-[0.4em] py-2.5 px-4 rounded-2xl border-2 border-slate-200 focus:border-[#0D8A8A] outline-none bg-slate-50">
+                <p id="adminPinError" class="text-rose-500 text-xs font-medium hidden">❌ รหัสแอดมินไม่ถูกต้อง</p>
+                <button type="submit" class="w-full py-3 px-4 bg-[#0D8A8A] hover:bg-teal-800 text-white font-semibold rounded-xl text-sm shadow-md transition">
+                    เข้าสู่ระบบสุ่มรหัสลูกค้า
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL สุ่มรหัสลูกค้า 6 หลักสำหรับเจ้าของร้าน -->
+    <div id="adminCodeModal" class="fixed inset-0 z-[99999] hidden items-center justify-center bg-slate-900/80 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-3xl shadow-2xl max-w-md w-full p-6 border-2 border-teal-200 relative">
+            <button type="button" onclick="closeAdminModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center font-bold">✕</button>
+            <div class="flex items-center gap-2.5 mb-3">
+                <span class="w-10 h-10 rounded-xl bg-teal-50 text-[#0D8A8A] border border-teal-200 flex items-center justify-center text-xl">🔑</span>
+                <div>
+                    <h3 class="font-bold text-slate-800 text-base">ระบบสุ่มรหัสลูกค้า (PlearnClass Admin)</h3>
+                    <p class="text-xs text-slate-500">สร้างรหัส 6 หลักเฉพาะบุคคล ป้องกันการแชร์ต่อ</p>
+                </div>
+            </div>
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-center my-4">
+                <p class="text-xs text-slate-500 mb-1">รหัสผ่าน 6 หลักที่สุ่มได้ (ใช้เข้าเว็บได้ทันที):</p>
+                <div id="generatedCodeDisplay" class="text-3xl sm:text-4xl font-extrabold tracking-[0.35em] text-[#0D8A8A] my-2 font-mono select-all">246817</div>
+                <p id="adminCopyFeedback" class="text-xs font-bold text-emerald-600 mb-2 hidden">✅ คัดลอกรหัสเรียบร้อยแล้ว!</p>
+                <div class="flex flex-wrap justify-center gap-2 mt-3">
+                    <button type="button" onclick="generateNewCustomerCode()" class="px-4 py-2 bg-[#0D8A8A] hover:bg-teal-800 text-white text-xs font-semibold rounded-xl shadow-sm transition">
+                        🎲 สุ่มรหัสใหม่
+                    </button>
+                    <button type="button" onclick="copyGeneratedCode()" class="px-4 py-2 bg-white hover:bg-orange-50 text-[#F26444] border border-orange-200 text-xs font-semibold rounded-xl transition">
+                        📋 คัดลอกรหัสส่งลูกค้า
+                    </button>
+                    <button type="button" onclick="testUnlockWithAdminCode()" class="px-3.5 py-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 text-xs font-semibold rounded-xl transition">
+                        🚀 ทดสอบปลดล็อก
+                    </button>
+                </div>
+            </div>
+            <div id="adminHistoryBox" class="mb-3 hidden">
+                <p class="text-[11px] font-bold text-slate-500 mb-1.5">ประวัติรหัสที่สุ่มล่าสุด (คลิกเพื่อคัดลอก):</p>
+                <div id="adminHistoryList" class="flex flex-wrap gap-1.5"></div>
+            </div>
+            <div class="bg-amber-50 border border-amber-200 rounded-xl p-3 text-xs text-amber-800 font-body leading-relaxed">
+                <strong>💡 วิธีการทำงาน:</strong> รหัสทุกชุดที่สุ่มจากหน้านี้ผ่านการเข้ารหัส Checksum ของระบบ สามารถกดสุ่มส่งให้ลูกค้าแต่ละคนไม่ซ้ำกันได้ทันทีโดยไม่ต้องแก้ไขโค้ดเว็บครับ
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL ดูพรอมต์ฉบับเต็ม -->
+    <div id="fullPromptModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/75 backdrop-blur-sm p-4">
+        <div class="bg-white rounded-3xl shadow-2xl max-w-3xl w-full max-h-[90vh] flex flex-col border-2 border-teal-100 overflow-hidden">
+            <div class="px-6 py-4 bg-gradient-to-r from-teal-50 via-amber-50/40 to-orange-50 border-b border-slate-200 flex items-center justify-between gap-3">
+                <div>
+                    <span id="modalBadge" class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-teal-100 text-[#0D8A8A] mb-1">หมวดวิชา</span>
+                    <h3 id="modalTitle" class="font-bold text-slate-800 text-base sm:text-lg line-clamp-1">หัวข้อใบงาน</h3>
+                </div>
+                <button type="button" onclick="closeFullModal()" class="w-9 h-9 rounded-full bg-white hover:bg-slate-100 text-slate-600 border border-slate-200 flex items-center justify-center font-bold flex-shrink-0">✕</button>
+            </div>
+            <div class="p-6 overflow-y-auto flex-grow bg-slate-50/70">
+                <pre id="modalPromptBody" class="whitespace-pre-wrap font-body text-sm text-slate-700 bg-white p-5 rounded-2xl border border-slate-200 shadow-inner leading-relaxed select-all"></pre>
+            </div>
+            <div class="px-6 py-4 bg-white border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
+                <div class="flex flex-wrap items-center gap-2">
+                    <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 text-xs font-semibold transition">🤖 เปิด ChatGPT</a>
+                    <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-200 text-xs font-semibold transition">✨ เปิด Gemini</a>
+                    <a href="https://labs.google/fx/tools/image-fx" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-700 border border-amber-200 text-xs font-semibold transition">🎨 เปิด ImageFX</a>
+                </div>
+                <button type="button" onclick="copyFromFullModal()" class="px-6 py-2.5 bg-gradient-to-r from-[#0D8A8A] to-teal-600 hover:from-teal-700 hover:to-teal-800 text-white font-semibold rounded-xl text-sm shadow-md transition flex items-center gap-2">
+                    <span>📋 คัดลอกพรอมต์ทั้งหมด</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST แจ้งเตือน -->
+    <div id="toastNotification" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+        <div class="bg-slate-900 text-white px-5 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3 border border-slate-700">
+            <span class="w-6 h-6 rounded-full bg-[#0D8A8A] text-white flex items-center justify-center text-xs font-bold">✓</span>
+            <div>
+                <p id="toastTitle" class="font-semibold text-sm">คัดลอกพรอมต์แล้ว!</p>
+                <p id="toastSub" class="text-xs text-slate-300 font-body">นำไปวางใน AI สร้างภาพที่รองรับภาษาไทยได้ทันที</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. HERO HEADER & 4-STEP WORKFLOW -->
+    <header class="pt-6 pb-10 px-4 sm:px-6 lg:px-8 border-b border-teal-100/70 bg-gradient-to-b from-white/80 to-transparent">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-end mb-2">
+                <button type="button" onclick="lockApp()" class="px-3.5 py-2 rounded-xl bg-white hover:bg-rose-50 text-slate-600 hover:text-rose-600 border border-slate-200 text-xs font-semibold transition shadow-sm">
+                    🔒 ล็อกหน้าจอ
+                </button>
+            </div>
+
+            <!-- โลโก้ PlearnClass กึ่งกลางขนาดใหญ่ + ป้ายจุดขาย 2 บรรทัด -->
+            <div class="flex flex-col items-center justify-center text-center mb-6">
+                <div onclick="handleSecretAdminTap()" class="inline-flex items-center gap-4 bg-white/95 px-6 py-3.5 rounded-3xl shadow-sm border border-slate-200/80 mb-3.5 select-none cursor-default">
+                    <svg class="w-12 h-14 sm:w-14 sm:h-16 flex-shrink-0" viewBox="0 0 100 115" fill="none">
+                        <path d="M18 12C18 7.58 21.58 4 26 4H54C76.09 4 94 21.91 94 44C94 66.09 76.09 84 54 84H38V99C38 105.63 32.63 111 26 111C21.58 111 18 107.42 18 103V12Z" fill="#0D8A8A"/>
+                        <circle cx="53" cy="44" r="24" fill="#FFFFFF"/>
+                        <circle cx="44" cy="41" r="3" fill="#1E293B"/>
+                        <circle cx="62" cy="41" r="3" fill="#1E293B"/>
+                        <circle cx="38" cy="47" r="4" fill="#F26444" fill-opacity="0.85"/>
+                        <circle cx="68" cy="47" r="4" fill="#F26444" fill-opacity="0.85"/>
+                        <path d="M47 47C48.5 51 57.5 51 59 47" stroke="#1E293B" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M62 91L64.5 97.5L71 100L64.5 102.5L62 109L59.5 102.5L53 100L59.5 97.5L62 91Z" fill="#FBBF24"/>
+                        <path d="M79 81L80.8 85.2L85 87L80.8 88.8L79 93L77.2 88.8L73 87L77.2 85.2L79 81Z" fill="#F59E0B"/>
+                    </svg>
+                    <div class="text-left">
+                        <div class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-none">
+                            <span class="text-[#0D8A8A]">Plearn</span><span class="text-[#F26444]">Class</span>
+                        </div>
+                        <div class="text-xs sm:text-[15px] font-bold text-slate-700 mt-1.5 tracking-wide">
+                            ครูเตรียมง่าย เด็กเรียนเพลิน
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inline-flex flex-col items-center px-5 py-2 rounded-2xl bg-white shadow-sm border border-teal-200 leading-tight">
+                    <span class="text-xs sm:text-sm font-bold text-[#0D8A8A]">🎨 PlearnClass Worksheet Studio</span>
+                    <span class="text-[11px] sm:text-xs font-semibold text-[#F26444] mt-0.5">จบปัญหาภาพรก ถ่ายเอกสารเละ</span>
+                </div>
+            </div>
+
+            <!-- หัวข้อหลัก 2 บรรทัด -->
+            <div class="text-center max-w-4xl mx-auto mb-8">
+                <h1 class="font-extrabold text-slate-800 leading-tight mb-4">
+                    <span class="block text-xl sm:text-4xl lg:text-[42px]">
+                        คลังสื่อการสอนและใบงาน <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#0D8A8A] via-teal-600 to-[#F26444]">8,000++</span>
+                    </span>
+                    <span class="block text-lg sm:text-3xl lg:text-[34px] text-slate-700 mt-1.5 sm:mt-2">
+                        สูตรลับ Prompt สื่อและใบงาน AI
+                    </span>
+                </h1>
+                <p class="text-slate-600 text-sm sm:text-base lg:text-lg font-body leading-relaxed max-w-3xl mx-auto mb-6">
+                    คลังคำสั่งสร้างภาพใบงาน AI ที่รู้ใจครูที่สุด ครบทั้ง <strong class="text-[#F26444]">โหมดภาพสีสดใส</strong> และ <strong class="text-[#0D8A8A]">โหมดขาว-ดำพร้อมถ่ายเอกสาร</strong> ตัดปัญหาเงาดำและตัวอักษรเพี้ยนกวนใจ แค่เลือกปรับแต่งแล้วกดคัดลอก ก็พร้อมสร้างสื่อสวยได้ทันที
+                </p>
+
+                <div class="inline-flex flex-wrap justify-center gap-3 sm:gap-4">
+                    <div class="px-5 py-2.5 rounded-2xl bg-white shadow-sm border border-teal-100 flex items-center gap-2">
+                        <span class="text-lg font-extrabold text-[#0D8A8A]" id="totalStatCount">8,000++</span>
+                        <span class="text-xs sm:text-sm font-medium text-slate-600">Prompt พร้อมใช้</span>
+                    </div>
+                    <div class="px-5 py-2.5 rounded-2xl bg-white shadow-sm border border-orange-100 flex items-center gap-2">
+                        <span class="text-lg font-extrabold text-[#F26444]">20</span>
+                        <span class="text-xs sm:text-sm font-medium text-slate-600">หมวดวิชา</span>
+                    </div>
+                    <div class="px-5 py-2.5 rounded-2xl bg-white shadow-sm border border-amber-100 flex items-center gap-2">
+                        <span class="text-lg font-extrabold text-amber-500">13</span>
+                        <span class="text-xs sm:text-sm font-medium text-slate-600">ระดับชั้น (อนุบาล–ม.6)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- กรอบขั้นตอนการทำงาน 4 ขั้นตอน -->
+            <div class="max-w-6xl mx-auto bg-gradient-to-br from-teal-50/70 via-white to-orange-50/40 rounded-3xl p-5 sm:p-7 shadow-lg shadow-teal-100/60 border-2 border-teal-200/80 relative overflow-hidden">
+                <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#0D8A8A] via-amber-300 to-[#F26444]"></div>
+
+                <div class="text-center mb-6">
+                    <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white text-[#0D8A8A] border border-teal-200 text-xs font-bold mb-2 shadow-sm">
+                        ✨ คู่มือเริ่มต้นใช้งานฉบับรวดเร็ว
+                    </span>
+                    <h2 class="text-lg sm:text-2xl font-extrabold text-slate-800">
+                        4 ขั้นตอนง่ายๆ สร้างสื่อและใบงาน AI สไตล์ <span class="text-[#0D8A8A]">Plearn</span><span class="text-[#F26444]">Class</span>
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-500 font-body mt-1">
+                        เตรียมสื่อการสอนและใบงานพร้อมใช้ในไม่กี่คลิก ครูเตรียมง่าย เด็กเรียนเพลิน
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+                    <!-- ขั้นที่ 1 -->
+                    <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border-2 border-teal-100 hover:border-[#0D8A8A]/60 hover:shadow-md transition flex flex-col justify-between group">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-3 py-1 rounded-full bg-[#0D8A8A] text-white font-bold text-xs shadow-sm">ขั้นตอนที่ 1</span>
+                                <span class="text-xs font-bold text-[#0D8A8A] opacity-85">เลือกหัวข้อ</span>
+                            </div>
+                            <div class="w-20 h-20 mx-auto my-2 flex items-center justify-center transform group-hover:scale-105 transition">
+                                <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
+                                    <rect x="14" y="18" width="44" height="54" rx="10" fill="#CCFBF1" stroke="#0D8A8A" stroke-width="3"/>
+                                    <line x1="22" y1="30" x2="46" y2="30" stroke="#0D8A8A" stroke-width="3" stroke-linecap="round"/>
+                                    <line x1="22" y1="40" x2="40" y2="40" stroke="#F26444" stroke-width="3" stroke-linecap="round"/>
+                                    <path d="M68 66L84 82" stroke="#F26444" stroke-width="9" stroke-linecap="round"/>
+                                    <circle cx="53" cy="51" r="22" fill="#FFFFFF" stroke="#0D8A8A" stroke-width="6"/>
+                                    <circle cx="47" cy="48" r="2.5" fill="#1E293B"/>
+                                    <circle cx="59" cy="48" r="2.5" fill="#1E293B"/>
+                                    <circle cx="42" cy="53" r="3.2" fill="#F26444" fill-opacity="0.85"/>
+                                    <circle cx="64" cy="53" r="3.2" fill="#F26444" fill-opacity="0.85"/>
+                                    <path d="M49 53C50.5 56 55.5 56 57 53" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+                                    <path d="M80 22L82 27L87 29L82 31L80 36L78 31L73 29L78 27L80 22Z" fill="#FBBF24"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-base text-center mt-2 mb-1.5">ค้นหาและกรอง</h3>
+                            <p class="text-xs sm:text-[13px] text-slate-600 font-body leading-relaxed text-center">
+                                ใช้ช่องค้นหา หรือเลือกกลุ่มสาระ ระดับชั้น<br>
+                                และรูปแบบใบงานที่ต้องการ
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ขั้นที่ 2 -->
+                    <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border-2 border-orange-100 hover:border-[#F26444]/60 hover:shadow-md transition flex flex-col justify-between group">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-3 py-1 rounded-full bg-[#F26444] text-white font-bold text-xs shadow-sm">ขั้นตอนที่ 2</span>
+                                <span class="text-xs font-bold text-[#F26444] opacity-85">คลิกเดียวจบ</span>
+                            </div>
+                            <div class="w-20 h-20 mx-auto my-2 flex items-center justify-center transform group-hover:scale-105 transition">
+                                <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
+                                    <rect x="30" y="16" width="46" height="58" rx="11" fill="#FFEDD5" stroke="#F26444" stroke-width="3"/>
+                                    <rect x="20" y="24" width="48" height="60" rx="12" fill="#0D8A8A"/>
+                                    <circle cx="44" cy="52" r="17" fill="#FFFFFF"/>
+                                    <circle cx="38" cy="49" r="2.4" fill="#1E293B"/>
+                                    <circle cx="50" cy="49" r="2.4" fill="#1E293B"/>
+                                    <circle cx="34" cy="54" r="3" fill="#F26444" fill-opacity="0.85"/>
+                                    <circle cx="54" cy="54" r="3" fill="#F26444" fill-opacity="0.85"/>
+                                    <path d="M40 54C41.5 57 46.5 57 48 54" stroke="#1E293B" stroke-width="2.4" stroke-linecap="round"/>
+                                    <circle cx="72" cy="70" r="13" fill="#F26444" stroke="#FFFFFF" stroke-width="3"/>
+                                    <path d="M67 70L70.5 73.5L77.5 66.5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20 14L22 19L27 21L22 23L20 28L18 23L13 21L18 19L20 14Z" fill="#FBBF24"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-base text-center mt-2 mb-1.5">คัดลอกพรอมต์</h3>
+                            <p class="text-xs sm:text-[13px] text-slate-600 font-body leading-relaxed text-center">
+                                กดปุ่ม "คัดลอกพรอมต์" บนการ์ด<br>
+                                ระบบจะคัดลอกข้อความครบถ้วนไม่ตกหล่น
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ขั้นที่ 3 -->
+                    <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border-2 border-amber-100 hover:border-amber-400/70 hover:shadow-md transition flex flex-col justify-between group">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-3 py-1 rounded-full bg-amber-500 text-white font-bold text-xs shadow-sm">ขั้นตอนที่ 3</span>
+                                <span class="text-xs font-bold text-amber-600 opacity-85">เสกภาพสวย</span>
+                            </div>
+                            <div class="w-20 h-20 mx-auto my-2 flex items-center justify-center transform group-hover:scale-105 transition">
+                                <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
+                                    <rect x="16" y="22" width="56" height="52" rx="14" fill="#0D8A8A"/>
+                                    <circle cx="44" cy="48" r="18" fill="#FFFFFF"/>
+                                    <circle cx="38" cy="45" r="2.5" fill="#1E293B"/>
+                                    <circle cx="50" cy="45" r="2.5" fill="#1E293B"/>
+                                    <circle cx="34" cy="50" r="3.2" fill="#F26444" fill-opacity="0.85"/>
+                                    <circle cx="54" cy="50" r="3.2" fill="#F26444" fill-opacity="0.85"/>
+                                    <path d="M40 50C41.5 53 46.5 53 48 50" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+                                    <path d="M62 82L82 52" stroke="#F26444" stroke-width="6" stroke-linecap="round"/>
+                                    <path d="M81 26L84.5 34.5L93 38L84.5 41.5L81 50L77.5 41.5L69 38L77.5 34.5L81 26Z" fill="#FBBF24"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-base text-center mt-2 mb-1.5">วางใน AI สร้างภาพ</h3>
+                            <p class="text-xs sm:text-[13px] text-slate-600 font-body leading-relaxed text-center">
+                                นำไปวางในเครื่องมือ AI สร้างภาพที่รองรับภาษาไทย<br>
+                                แล้วกดสร้าง
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ขั้นที่ 4 -->
+                    <div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border-2 border-teal-100 hover:border-[#0D8A8A]/60 hover:shadow-md transition flex flex-col justify-between group">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="px-3 py-1 rounded-full bg-gradient-to-r from-[#0D8A8A] to-[#F26444] text-white font-bold text-xs shadow-sm">ขั้นตอนที่ 4</span>
+                                <span class="text-xs font-bold text-[#0D8A8A] opacity-85">พร้อมสอนทันที</span>
+                            </div>
+                            <div class="w-20 h-20 mx-auto my-2 flex items-center justify-center transform group-hover:scale-105 transition">
+                                <svg class="w-full h-full" viewBox="0 0 100 100" fill="none">
+                                    <rect x="30" y="14" width="40" height="22" rx="6" fill="#CCFBF1" stroke="#0D8A8A" stroke-width="3"/>
+                                    <rect x="16" y="30" width="68" height="36" rx="12" fill="#0D8A8A"/>
+                                    <circle cx="72" cy="41" r="3.5" fill="#FBBF24"/>
+                                    <rect x="28" y="50" width="44" height="36" rx="8" fill="#FFFFFF" stroke="#F26444" stroke-width="3.5"/>
+                                    <circle cx="44" cy="64" r="2.2" fill="#1E293B"/>
+                                    <circle cx="56" cy="64" r="2.2" fill="#1E293B"/>
+                                    <circle cx="40" cy="68.5" r="2.8" fill="#F26444" fill-opacity="0.85"/>
+                                    <circle cx="60" cy="68.5" r="2.8" fill="#F26444" fill-opacity="0.85"/>
+                                    <path d="M46 68.5C47.5 71 52.5 71 54 68.5" stroke="#1E293B" stroke-width="2.2" stroke-linecap="round"/>
+                                    <line x1="38" y1="77" x2="62" y2="77" stroke="#0D8A8A" stroke-width="2.5" stroke-linecap="round"/>
+                                    <path d="M84 68L86 73L91 75L86 77L84 82L82 77L77 75L82 73L84 68Z" fill="#FBBF24"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-base text-center mt-2 mb-1.5">ปรับแต่งและพิมพ์</h3>
+                            <p class="text-xs sm:text-[13px] text-slate-600 font-body leading-relaxed text-center">
+                                ปรับสไตล์ภาพ จำนวนข้อ หรือหัวข้อย่อยได้ตามต้องการ<br>
+                                แล้วพิมพ์เป็นใบงาน A4
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. MAIN CONTENT -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- แผงควบคุมหลัก -->
+        <section class="bg-white/95 rounded-3xl shadow-lg shadow-teal-100/50 border-2 border-teal-200/80 p-5 sm:p-7 mb-6 relative overflow-hidden">
+            <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#0D8A8A] via-amber-300 to-[#F26444]"></div>
+
+            <div class="flex flex-wrap items-center justify-between gap-3 pb-4 mb-5 border-b border-teal-100">
+                <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-2xl bg-teal-50 border border-teal-200 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-8 h-8" viewBox="0 0 100 100" fill="none">
+                            <rect x="14" y="16" width="66" height="66" rx="20" fill="#0D8A8A"/>
+                            <circle cx="47" cy="49" r="21" fill="#FFFFFF"/>
+                            <circle cx="40" cy="46" r="2.8" fill="#1E293B"/>
+                            <circle cx="54" cy="46" r="2.8" fill="#1E293B"/>
+                            <circle cx="35" cy="51.5" r="3.5" fill="#F26444" fill-opacity="0.85"/>
+                            <circle cx="59" cy="51.5" r="3.5" fill="#F26444" fill-opacity="0.85"/>
+                            <path d="M42 51.5C43.5 55 50.5 55 52 51.5" stroke="#1E293B" stroke-width="2.6" stroke-linecap="round"/>
+                            <path d="M84 14L86.2 19.8L92 22L86.2 24.2L84 30L81.8 24.2L76 22L81.8 19.8L84 14Z" fill="#FBBF24"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="font-extrabold text-slate-800 text-base sm:text-lg leading-tight">
+                            แผงควบคุมการสร้างสื่อและใบงาน <span class="text-[#0D8A8A]">Plearn</span><span class="text-[#F26444]">Class</span>
+                        </h2>
+                        <p class="text-xs text-slate-500 font-body mt-0.5">
+                            เลือกโหมดการพิมพ์และประเภทงานที่ต้องการ ระบบจะปรับสูตรคำสั่งทุกการ์ดให้อัตโนมัติ
+                        </p>
+                    </div>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-orange-50 text-[#F26444] border border-orange-200 text-xs font-bold">
+                    ✨ ปรับค่าอัตโนมัติทุกการ์ด
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
+                <!-- 1. เลือกโหมดการพิมพ์ -->
+                <div class="lg:col-span-7 flex flex-col justify-between">
+                    <label class="flex items-center gap-2 text-xs sm:text-sm font-extrabold text-slate-800 mb-2.5">
+                        <span class="w-5 h-5 rounded-full bg-[#0D8A8A] text-white text-[11px] flex items-center justify-center font-bold">1</span>
+                        <span>เลือกโหมดการพิมพ์ <span class="font-medium text-slate-500 text-xs">(ควบคุมโทนสีและความคมชัดทุกการ์ดอัตโนมัติ)</span></span>
+                    </label>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 bg-teal-50/60 p-2 rounded-2xl border border-teal-200/80 h-full">
+                        <button type="button" onclick="setGlobalPrintMode('bw_clean')" id="printBtn-bw_clean"
+                            class="print-mode-btn py-3 px-3.5 rounded-xl text-left transition-all bg-[#0D8A8A] text-white shadow-md shadow-teal-200/80 border-2 border-[#0D8A8A]">
+                            <div class="font-bold text-xs sm:text-sm flex items-center gap-1.5">🖨️ ลายเส้นขาว-ดำ</div>
+                            <div class="text-[11px] opacity-95 font-body mt-0.5 text-white">พร้อมถ่ายเอกสาร ไร้เงาดำ</div>
+                        </button>
+                        <button type="button" onclick="setGlobalPrintMode('bw_coloring')" id="printBtn-bw_coloring"
+                            class="print-mode-btn py-3 px-3.5 rounded-xl text-left transition-all bg-white text-slate-700 hover:bg-teal-50/60 border-2 border-transparent hover:border-teal-200">
+                            <div class="font-bold text-xs sm:text-sm flex items-center gap-1.5">🖍️ ลายเส้นหนา</div>
+                            <div class="text-[11px] text-slate-500 font-body mt-0.5">สำหรับเด็กระบายสี ช่องใหญ่</div>
+                        </button>
+                        <button type="button" onclick="setGlobalPrintMode('color_vivid')" id="printBtn-color_vivid"
+                            class="print-mode-btn py-3 px-3.5 rounded-xl text-left transition-all bg-white text-slate-700 hover:bg-orange-50/60 border-2 border-transparent hover:border-orange-200">
+                            <div class="font-bold text-xs sm:text-sm flex items-center gap-1.5">🎨 ภาพสีสดใส</div>
+                            <div class="text-[11px] text-slate-500 font-body mt-0.5">ขึ้นจอทีวี / ปริ๊นต์สีสวยงาม</div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 2. เลือกประเภทงานหลัก (โหมดสื่อการสอน ขึ้นก่อน โหมดใบงาน) -->
+                <div class="lg:col-span-5 flex flex-col justify-between">
+                    <label class="flex items-center gap-2 text-xs sm:text-sm font-extrabold text-slate-800 mb-2.5">
+                        <span class="w-5 h-5 rounded-full bg-[#F26444] text-white text-[11px] flex items-center justify-center font-bold">2</span>
+                        <span>เลือกประเภทงานหลัก</span>
+                    </label>
+                    <div class="grid grid-cols-2 gap-2.5 bg-orange-50/60 p-2 rounded-2xl border border-orange-200/80 h-full">
+                        <button type="button" onclick="setPrimaryStudioMode('media')" id="studioBtn-media"
+                            class="py-3 px-3.5 rounded-xl text-left transition-all bg-gradient-to-r from-[#0D8A8A] to-teal-600 text-white shadow-md shadow-teal-200/80 border-2 border-[#0D8A8A]">
+                            <div class="font-bold text-xs sm:text-sm flex items-center gap-1.5">📚 โหมดสื่อการสอน</div>
+                            <div class="text-[11px] opacity-95 font-body mt-0.5 text-white">โปสเตอร์ / แฟลชการ์ด</div>
+                        </button>
+                        <button type="button" onclick="setPrimaryStudioMode('worksheet')" id="studioBtn-worksheet"
+                            class="py-3 px-3.5 rounded-xl text-left transition-all bg-white text-slate-700 hover:bg-orange-50 border-2 border-transparent hover:border-orange-200">
+                            <div class="font-bold text-xs sm:text-sm flex items-center gap-1.5">📝 โหมดใบงาน</div>
+                            <div class="text-[11px] text-slate-500 font-body mt-0.5">Worksheet ผสมกิจกรรม</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- กล่องตัวกรอง 3 คอลัมน์สัมพันธ์กัน -->
+        <section class="mb-6 space-y-4">
+            <div class="bg-white/95 rounded-3xl p-5 sm:p-6 shadow-md shadow-teal-100/40 border-2 border-teal-200/80">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-teal-100">
+                    <div class="flex items-center gap-2">
+                        <span class="w-7 h-7 rounded-xl bg-teal-50 text-[#0D8A8A] border border-teal-200 flex items-center justify-center text-sm">🗂️</span>
+                        <div>
+                            <h3 class="font-extrabold text-slate-800 text-sm sm:text-base">เลือกหมวดหมู่การเรียนรู้</h3>
+                            <p class="text-[11px] text-slate-500 font-body">เลือกระดับชั้น กลุ่มสาระการเรียนรู้ และรายชื่อวิชาที่สัมพันธ์กันอัตโนมัติ</p>
+                        </div>
+                    </div>
+                    <button type="button" onclick="resetAllFilters()"
+                        class="px-3.5 py-1.5 bg-orange-50 hover:bg-orange-100 text-[#F26444] border border-orange-200 font-bold rounded-xl text-xs transition flex items-center gap-1">
+                        <span>🔄 ล้างตัวกรองทั้งหมด</span>
+                    </button>
+                </div>
+
+                <!-- 3 คอลัมน์ -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                    <div class="bg-orange-50/40 p-3.5 rounded-2xl border border-orange-200/80">
+                        <label for="gradeDropdown" class="flex items-center gap-1.5 text-xs font-extrabold text-slate-800 mb-2">
+                            <span class="w-5 h-5 rounded-full bg-[#F26444] text-white text-[11px] flex items-center justify-center font-bold">1</span>
+                            <span>ระดับชั้น (13 ระดับ)</span>
+                        </label>
+                        <select id="gradeDropdown" onchange="handleCascadingFilterChange('grade')"
+                            class="w-full py-2.5 px-3 bg-white border-2 border-orange-200 rounded-xl text-xs sm:text-sm font-bold text-slate-800 focus:border-[#F26444] outline-none cursor-pointer shadow-sm"></select>
+                    </div>
+
+                    <div class="bg-teal-50/40 p-3.5 rounded-2xl border border-teal-200/80">
+                        <label for="learningAreaDropdown" class="flex items-center gap-1.5 text-xs font-extrabold text-slate-800 mb-2">
+                            <span class="w-5 h-5 rounded-full bg-[#0D8A8A] text-white text-[11px] flex items-center justify-center font-bold">2</span>
+                            <span>กลุ่มสาระการเรียนรู้</span>
+                        </label>
+                        <select id="learningAreaDropdown" onchange="handleCascadingFilterChange('area')"
+                            class="w-full py-2.5 px-3 bg-white border-2 border-teal-200 rounded-xl text-xs sm:text-sm font-bold text-slate-800 focus:border-[#0D8A8A] outline-none cursor-pointer shadow-sm"></select>
+                    </div>
+
+                    <div class="bg-amber-50/40 p-3.5 rounded-2xl border border-amber-200/80">
+                        <label for="subjectDropdown" class="flex items-center gap-1.5 text-xs font-extrabold text-slate-800 mb-2">
+                            <span class="w-5 h-5 rounded-full bg-amber-500 text-white text-[11px] flex items-center justify-center font-bold">3</span>
+                            <span>รายชื่อวิชา (20 วิชา)</span>
+                        </label>
+                        <select id="subjectDropdown" onchange="handleCascadingFilterChange('subject')"
+                            class="w-full py-2.5 px-3 bg-white border-2 border-amber-200 rounded-xl text-xs sm:text-sm font-bold text-slate-800 focus:border-amber-500 outline-none cursor-pointer shadow-sm"></select>
+                    </div>
+                </div>
+
+                <!-- ช่องค้นหาอัจฉริยะ & ตัวเลือกรูปแบบด่วน -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-3 pt-3 border-t border-slate-100">
+                    <div class="md:col-span-7 relative">
+                        <span class="absolute inset-y-0 left-3.5 flex items-center text-slate-400">🔍</span>
+                        <input type="text" id="searchInput" oninput="handleFilterChange()" placeholder="พิมพ์คำค้นหา เรื่อง หัวข้อ หรือชื่อวิชา (พิมพ์สร้างเรื่องใหม่ได้ทันที)..."
+                            class="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:bg-white focus:border-[#0D8A8A] outline-none transition">
+                    </div>
+                    <div class="md:col-span-5">
+                        <select id="activityFilterDropdown" onchange="handleActivityDropdownChange()"
+                            class="w-full py-2.5 px-3 bg-slate-50 border border-slate-200 rounded-xl text-sm font-medium text-slate-700 focus:border-[#0D8A8A] outline-none cursor-pointer"></select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- กล่องตั้งค่าบริบทพิเศษ (Studio Context Bar) แบบพับ/ขยายได้ -->
+            <div class="bg-gradient-to-br from-orange-50/60 via-white to-teal-50/60 rounded-3xl p-5 sm:p-6 shadow-md shadow-orange-100/40 border-2 border-dashed border-[#F26444]/60 transition-all">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                    <div class="flex items-center gap-2.5">
+                        <span class="w-8 h-8 rounded-xl bg-orange-100 text-[#F26444] border border-orange-200 flex items-center justify-center text-base">✨</span>
+                        <div>
+                            <div class="flex flex-wrap items-center gap-2">
+                                <h3 class="font-extrabold text-slate-800 text-sm sm:text-base">ตั้งค่าบริบทพิเศษ (Studio Context Bar)</h3>
+                                <span id="contextActiveBadge" class="hidden px-2.5 py-0.5 rounded-full bg-[#0D8A8A] text-white text-[11px] font-bold">กำลังใช้งานบริบทพิเศษ</span>
+                            </div>
+                            <p class="text-[11px] text-slate-500 font-body">ใช้ร่วมกันได้ทั้งโหมดสื่อการสอนและโหมดใบงาน (อัปเดตทุกการ์ดอัตโนมัติ)</p>
+                        </div>
+                    </div>
+                    <button type="button" onclick="toggleStudioContextBar()" id="toggleContextBtn"
+                        class="px-3.5 py-1.5 rounded-xl bg-white hover:bg-orange-50 text-slate-700 border border-orange-200 font-bold text-xs shadow-sm transition flex items-center gap-1.5">
+                        <span id="toggleContextLabel">พับเก็บ</span>
+                        <span id="toggleContextIcon">▴</span>
+                    </button>
+                </div>
+
+                <!-- เนื้อหาด้านใน Studio Context Bar (เปิดกางโชว์ไว้ตั้งแต่แรก) -->
+                <div id="studioContextBody" class="mt-4 pt-4 border-t border-orange-200/60 grid grid-cols-1 lg:grid-cols-12 gap-4 items-stretch">
+                    <!-- ฝั่งซ้าย: เนื้อหาบทเรียนเพิ่มเติม -->
+                    <div class="lg:col-span-6 flex flex-col justify-between bg-white/90 p-3.5 rounded-2xl border border-orange-200/80">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <label for="extraLessonInput" class="text-xs font-extrabold text-slate-800 flex items-center gap-1.5">
+                                    <span>📝 ใส่เนื้อหาบทเรียนหรือข้อมูลเพิ่มเติม (ถ้ามี)</span>
+                                </label>
+                                <button type="button" onclick="clearExtraLesson()" class="text-[11px] font-semibold text-slate-400 hover:text-rose-500 transition">
+                                    ล้างข้อความ
+                                </button>
+                            </div>
+                            <textarea id="extraLessonInput" rows="4" oninput="handleContextBarChange()"
+                                placeholder="วางเนื้อหาบทเรียน คำศัพท์ ตัวอย่างโจทย์ หรือรายละเอียดเฉพาะที่ต้องการให้ปรากฏในสื่อ/ใบงาน (เว้นว่างได้หากต้องการให้ AI สร้างตามหลักสูตรอัตโนมัติ)..."
+                                class="w-full p-3 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm font-body text-slate-700 focus:bg-white focus:border-[#0D8A8A] outline-none transition resize-none"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- ฝั่งขวา 2 ชั้น: ธีมสถานการณ์ + ขอบเขตบริบทสังคม -->
+                    <div class="lg:col-span-6 flex flex-col justify-between gap-3">
+                        <!-- ชั้นบน: ธีมสถานการณ์ -->
+                        <div class="bg-white/90 p-3.5 rounded-2xl border border-amber-200/80">
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <label for="scenarioDropdown" class="text-xs font-extrabold text-slate-800 flex items-center gap-1.5">
+                                    <span>🌟 ธีมสถานการณ์ (Scenario Theme)</span>
+                                </label>
+                                <button type="button" onclick="randomizeSmartScenario()"
+                                    class="px-3 py-1 rounded-xl bg-gradient-to-r from-[#F26444] to-orange-500 hover:from-orange-600 hover:to-orange-700 text-white text-xs font-bold shadow-sm transition transform active:scale-95 flex items-center gap-1">
+                                    <span>🎲 สุ่ม</span>
+                                </button>
+                            </div>
+                            <select id="scenarioDropdown" onchange="handleScenarioDropdownChange()"
+                                class="w-full py-2.5 px-3 bg-slate-50 border border-amber-200 rounded-xl text-xs sm:text-sm font-bold text-slate-800 focus:bg-white focus:border-[#F26444] outline-none cursor-pointer"></select>
+
+                            <!-- ช่องพิมพ์สถานการณ์เอง (เด้งเปิดอัตโนมัติเมื่อเลือกกำหนดเอง) -->
+                            <div id="customScenarioBox" class="hidden mt-2.5">
+                                <input type="text" id="customScenarioInput" oninput="handleContextBarChange()"
+                                    placeholder="พิมพ์สถานการณ์สั้นๆ 1–2 บรรทัด เช่น น้องปั้นจัดงานวันเกิดให้แม่ด้วยงบ 500 บาท..."
+                                    class="w-full py-2 px-3 bg-amber-50/60 border-2 border-amber-300 rounded-xl text-xs sm:text-sm font-body text-slate-800 focus:bg-white focus:border-[#F26444] outline-none transition">
+                            </div>
+                        </div>
+
+                        <!-- ชั้นล่าง: ขอบเขตบริบทสังคม -->
+                        <div class="bg-white/90 p-3.5 rounded-2xl border border-teal-200/80">
+                            <label for="socialScopeDropdown" class="block text-xs font-extrabold text-slate-800 mb-2">
+                                🌐 ขอบเขตบริบทสังคม (Social Context Scope)
+                            </label>
+                            <select id="socialScopeDropdown" onchange="handleContextBarChange()"
+                                class="w-full py-2.5 px-3 bg-slate-50 border border-teal-200 rounded-xl text-xs sm:text-sm font-bold text-slate-800 focus:bg-white focus:border-[#0D8A8A] outline-none cursor-pointer"></select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap items-baseline justify-between gap-2 pt-2">
+                <div>
+                    <span class="text-xs font-bold text-[#0D8A8A] uppercase tracking-wider">คลังพรอมต์ PlearnClass</span>
+                    <h2 class="text-xl sm:text-2xl font-extrabold text-slate-800">
+                        เลือกพรอมต์<span id="headerModeLabel">สื่อการสอน</span> <span id="filteredCountText" class="text-[#F26444]">2,340</span> รายการ
+                    </h2>
+                </div>
+                <div class="text-xs text-slate-500 bg-white px-3.5 py-1.5 rounded-full border border-slate-200 shadow-sm">
+                    กำลังแสดง: <strong id="activeFilterSummary" class="text-slate-700">ทุกระดับชั้น · ทุกกลุ่มสาระ · ทุกรายวิชา</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROMPT CARDS GRID -->
+        <section>
+            <div id="cardsGrid" class="grid grid-cols-1 lg:grid-cols-2 gap-6"></div>
+
+            <div id="loadMoreContainer" class="mt-8 text-center hidden">
+                <button type="button" onclick="loadMoreCards()"
+                    class="px-8 py-3.5 bg-white hover:bg-teal-50 text-[#0D8A8A] border-2 border-teal-200 font-bold rounded-2xl shadow-sm transition transform active:scale-95 text-sm">
+                    ⬇️ โหลดรายการเพิ่มเติม (<span id="remainingCount">0</span> รายการที่เหลือ)
+                </button>
+            </div>
+
+            <div id="emptyResultState" class="hidden text-center py-16 bg-white rounded-3xl border border-slate-200 shadow-sm">
+                <div class="text-5xl mb-3">🔎</div>
+                <h3 class="text-lg font-bold text-slate-700 mb-1">ไม่พบพรอมต์ที่ตรงกับเงื่อนไขการค้นหา</h3>
+                <p class="text-sm text-slate-500 mb-4">ลองปรับเปลี่ยนคำค้นหา หรือกดล้างตัวกรองเพื่อดูรายการทั้งหมดครับ</p>
+                <button type="button" onclick="resetAllFilters()" class="px-5 py-2.5 bg-[#0D8A8A] text-white font-semibold rounded-xl text-sm hover:bg-teal-800 transition">
+                    ล้างตัวกรองทั้งหมด
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- 4. FOOTER -->
+    <footer class="bg-white border-t border-slate-200/80 py-8 px-4 sm:px-6 lg:px-8 mt-12">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div>
+                <p class="font-bold text-slate-800 text-sm sm:text-base select-none">
+                    สร้างสรรค์และพัฒนาโดย <span onclick="handleSecretAdminTap()" class="cursor-default text-[#0D8A8A]">PlearnClass</span> · ครูเตรียมง่าย เด็กเรียนเพลิน
+                </p>
+                <p class="text-xs text-slate-500 font-body mt-1">
+                    คลังสื่อการสอนและใบงาน 8,000++ สูตรลับ Prompt สื่อและใบงาน AI · ครอบคลุม 20 หมวดวิชา อนุบาล–ม.6
+                </p>
+            </div>
+            <div class="text-xs text-slate-400 font-body">
+                สงวนลิขสิทธิ์สำหรับสมาชิกที่ได้รับรหัสผ่านเท่านั้น
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // =====================================================================
+        // 1. ระบบความปลอดภัย Checksum Multi-Code 6 หลัก & ทางเข้าลับแอดมิน (PIN: 1689)
+        // =====================================================================
+        const OWNER_ADMIN_PIN = '1689';
+        let secretTapCount = 0;
+        let secretTapTimer = null;
+        let adminCodeHistory = [];
+
+        function isValidChecksumPin(code) {
+            if (!/^[1-9]\d{5}$/.test(code)) return false;
+            const d = code.split('').map(Number);
+            return d[5] === ((d[0] + d[1] + d[2] + d[3] + d[4]) % 10);
+        }
+
+        function generateChecksumPin() {
+            let d1, d2, d3, d4, d5;
+            do {
+                d1 = Math.floor(Math.random() * 9) + 1;
+                d2 = Math.floor(Math.random() * 10);
+                d3 = Math.floor(Math.random() * 10);
+                d4 = Math.floor(Math.random() * 10);
+                d5 = Math.floor(Math.random() * 10);
+            } while (
+                (d1 === d2 && d2 === d3) ||
+                (d2 === d3 && d3 === d4) ||
+                (d3 === d4 && d4 === d5) ||
+                (d2 === d1 + 1 && d3 === d2 + 1 && d4 === d3 + 1)
+            );
+            const d6 = (d1 + d2 + d3 + d4 + d5) % 10;
+            return `${d1}${d2}${d3}${d4}${d5}${d6}`;
+        }
+
+        function setupPinInputs() {
+            const boxes = document.querySelectorAll('.pin-box');
+            boxes.forEach((box, idx) => {
+                box.addEventListener('input', (e) => {
+                    e.target.value = e.target.value.replace(/[^0-9]/g, '');
+                    document.getElementById('pinErrorMsg').classList.add('hidden');
+                    if (e.target.value.length === 1 && idx < boxes.length - 1) {
+                        boxes[idx + 1].focus();
+                    }
+                });
+                box.addEventListener('keydown', (e) => {
+                    if (e.key === 'Backspace' && !e.target.value && idx > 0) {
+                        boxes[idx - 1].focus();
+                    }
+                });
+                box.addEventListener('paste', (e) => {
+                    e.preventDefault();
+                    const pasted = (e.clipboardData || window.clipboardData).getData('text').replace(/[^0-9]/g, '').slice(0, 6);
+                    pasted.split('').forEach((char, i) => {
+                        if (boxes[i]) boxes[i].value = char;
+                    });
+                    if (pasted.length > 0) {
+                        boxes[Math.min(pasted.length, boxes.length - 1)].focus();
+                    }
+                });
+            });
+
+            document.getElementById('pinForm').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const code = Array.from(boxes).map(b => b.value).join('');
+                if (isValidChecksumPin(code)) {
+                    unlockApp();
+                } else {
+                    document.getElementById('pinErrorMsg').classList.remove('hidden');
+                    boxes.forEach(b => b.classList.add('border-rose-400', 'bg-rose-50'));
+                    setTimeout(() => boxes.forEach(b => b.classList.remove('border-rose-400', 'bg-rose-50')), 800);
+                }
+            });
+
+            document.getElementById('adminPinForm').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const pinVal = String(document.getElementById('adminPinInput').value || '').trim();
+                if (pinVal === OWNER_ADMIN_PIN) {
+                    closeAdminPinModal();
+                    openAdminModal();
+                } else {
+                    document.getElementById('adminPinError').classList.remove('hidden');
+                }
+            });
+        }
+
+        function unlockApp() {
+            try { localStorage.setItem('plearn_unlocked', 'true'); } catch (err) {}
+            const gate = document.getElementById('accessGate');
+            gate.classList.add('opacity-0', 'pointer-events-none');
+            setTimeout(() => gate.classList.add('hidden'), 300);
+        }
+
+        function lockApp() {
+            try { localStorage.removeItem('plearn_unlocked'); } catch (err) {}
+            const gate = document.getElementById('accessGate');
+            gate.classList.remove('hidden', 'opacity-0', 'pointer-events-none');
+            document.querySelectorAll('.pin-box').forEach(b => b.value = '');
+            document.querySelectorAll('.pin-box')[0].focus();
+        }
+
+        function handleSecretAdminTap() {
+            secretTapCount++;
+            clearTimeout(secretTapTimer);
+            secretTapTimer = setTimeout(() => { secretTapCount = 0; }, 3000);
+            if (secretTapCount >= 5) {
+                secretTapCount = 0;
+                openAdminPinModal();
+            }
+        }
+
+        function openAdminPinModal() {
+            document.getElementById('adminPinInput').value = '';
+            document.getElementById('adminPinError').classList.add('hidden');
+            const m = document.getElementById('adminPinModal');
+            m.classList.remove('hidden');
+            m.classList.add('flex');
+            setTimeout(() => document.getElementById('adminPinInput').focus(), 100);
+        }
+
+        function closeAdminPinModal() {
+            const m = document.getElementById('adminPinModal');
+            m.classList.add('hidden');
+            m.classList.remove('flex');
+        }
+
+        function openAdminModal() {
+            document.getElementById('adminCopyFeedback').classList.add('hidden');
+            generateNewCustomerCode();
+            const m = document.getElementById('adminCodeModal');
+            m.classList.remove('hidden');
+            m.classList.add('flex');
+        }
+
+        function closeAdminModal() {
+            const m = document.getElementById('adminCodeModal');
+            m.classList.add('hidden');
+            m.classList.remove('flex');
+        }
+
+        function renderAdminHistory() {
+            const box = document.getElementById('adminHistoryBox');
+            const list = document.getElementById('adminHistoryList');
+            if (!box || !list) return;
+            if (adminCodeHistory.length === 0) {
+                box.classList.add('hidden');
+                return;
+            }
+            box.classList.remove('hidden');
+            list.innerHTML = adminCodeHistory.map(c =>
+                `<button type="button" onclick="copySpecificAdminCode('${c}')" class="px-2.5 py-1 rounded-lg bg-teal-50 hover:bg-teal-100 text-[#0D8A8A] border border-teal-200 font-mono text-xs font-bold transition">${c}</button>`
+            ).join('');
+        }
+
+        function generateNewCustomerCode() {
+            const newCode = generateChecksumPin();
+            const disp = document.getElementById('generatedCodeDisplay');
+            if (disp) disp.textContent = newCode;
+            const fb = document.getElementById('adminCopyFeedback');
+            if (fb) fb.classList.add('hidden');
+            adminCodeHistory = [newCode, ...adminCodeHistory.filter(x => x !== newCode)].slice(0, 5);
+            renderAdminHistory();
+        }
+
+        function copySpecificAdminCode(code) {
+            copyTextToClipboard(code, `✅ คัดลอกรหัส ${code} เรียบร้อยแล้ว!`, 'ส่งรหัสนี้ให้ลูกค้าเพื่อเข้าใช้งานคลัง Prompt ได้ทันที');
+            const fb = document.getElementById('adminCopyFeedback');
+            if (fb) {
+                fb.textContent = `✅ คัดลอกรหัส ${code} เรียบร้อยแล้ว!`;
+                fb.classList.remove('hidden');
+            }
+        }
+
+        function copyGeneratedCode() {
+            const disp = document.getElementById('generatedCodeDisplay');
+            const code = disp ? disp.textContent.trim() : '';
+            if (!code) return;
+            copySpecificAdminCode(code);
+        }
+
+        function testUnlockWithAdminCode() {
+            const disp = document.getElementById('generatedCodeDisplay');
+            const code = disp ? disp.textContent.trim() : '';
+            if (isValidChecksumPin(code)) {
+                closeAdminModal();
+                unlockApp();
+                showToast(`ปลดล็อกด้วยรหัส ${code} สำเร็จ!`, 'ระบบตรวจสอบรหัส 6 หลักผ่านสมบูรณ์ 100%');
+            }
+        }
+
+        function openAdminPinModal() {
+            document.getElementById('adminPinInput').value = '';
+            document.getElementById('adminPinError').classList.add('hidden');
+            const m = document.getElementById('adminPinModal');
+            m.classList.remove('hidden');
+            m.classList.add('flex');
+            setTimeout(() => document.getElementById('adminPinInput').focus(), 100);
+        }
+
+        function closeAdminPinModal() {
+            const m = document.getElementById('adminPinModal');
+            m.classList.add('hidden');
+            m.classList.remove('flex');
+        }
+
+        function openAdminModal() {
+            generateNewCustomerCode();
+            const m = document.getElementById('adminCodeModal');
+            m.classList.remove('hidden');
+            m.classList.add('flex');
+        }
+
+        function closeAdminModal() {
+            const m = document.getElementById('adminCodeModal');
+            m.classList.add('hidden');
+            m.classList.remove('flex');
+        }
+
+        function generateNewCustomerCode() {
+            document.getElementById('generatedCodeDisplay').textContent = generateChecksumPin();
+        }
+
+        function copyGeneratedCode() {
+            const code = document.getElementById('generatedCodeDisplay').textContent;
+            copyTextToClipboard(code, `คัดลอกรหัสลูกค้า ${code} แล้ว!`, 'ส่งรหัสนี้ให้ลูกค้าเพื่อเข้าใช้งานคลัง Prompt ได้ทันที');
+        }
+
+        // =====================================================================
+        // 2. ฐานข้อมูลโหมดการพิมพ์ กิจกรรมใบงาน สไตล์สื่อการสอน และมาตรฐานราชบัณฑิตยสถาน
+        // =====================================================================
+        const PRINT_MODES = {
+            bw_clean: {
+                worksheetRule: 'โหมดการพิมพ์: ลายเส้นขาว-ดำ (Black & White Clean Line Art) พื้นหลังสีขาวล้วน 100% เส้นหมึกสีดำคมชัด ไม่มีสีเทา ไม่มีเงาดำทึบ เหมาะสำหรับถ่ายเอกสารและพิมพ์ขาว-ดำประหยัดหมึก',
+                mediaRule: 'ลายเส้นขาว-ดำคมชัดบนพื้นหลังสีขาวสะอาดตา (Clean Black & White Line Art on Pure White Background) ไม่มีเงาดำหรือพื้นหลังทึบ พร้อมพิมพ์และถ่ายเอกสารชัดเจน'
+            },
+            bw_coloring: {
+                worksheetRule: 'โหมดการพิมพ์: ลายเส้นหนาระบายสี (Bold Outline Coloring Book Style) เส้นขอบสีดำหนาชัดเจน พื้นที่ด้านในโล่งขาวสะอาด ช่องใหญ่ เหมาะสำหรับนักเรียนฝึกระบายสีและถ่ายเอกสาร',
+                mediaRule: 'ลายเส้นขอบหนาสีดำชัดเจน พื้นที่ด้านในโล่งขาวสะอาด (Bold Coloring Book Outline) เหมาะสำหรับพิมพ์ให้นักเรียนระบายสีประกอบการเรียนรู้'
+            },
+            color_vivid: {
+                worksheetRule: 'โหมดการพิมพ์: ภาพสีสดใสสวยงาม (Full Vivid Pastel & Bright Colors) สีสันน่ารัก สบายตา คมชัด เหมาะสำหรับขึ้นจอทีวีหรือพิมพ์สี',
+                mediaRule: 'ภาพสีสันสดใสน่ารัก สบายตา (Full Vivid Educational Colors) แยกโทนสีองค์ประกอบชัดเจน เหมาะสำหรับขึ้นจอทีวี สไลด์นำเสนอ หรือพิมพ์สีติดห้องเรียน'
+            }
+        };
+
+        const THAI_STANDARD_RULE = `คำสั่งเพิ่มเติมด้านภาษาไทย (บังคับใช้):
+ให้ใช้ภาษาไทยที่เป็นทางการ ถูกต้องตามหลักอักขรวิธี การสะกดคำ การใช้สระ วรรณยุกต์ และเครื่องหมายวรรคตอน โดยยึดตาม "พจนานุกรม ฉบับราชบัณฑิตยสถาน พ.ศ. 2554" และ "หลักเกณฑ์การทับศัพท์และศัพท์บัญญัติของสำนักงานราชบัณฑิตยสภา" เป็นมาตรฐานสูงสุด
+ข้อห้ามเด็ดขาด:
+1. ห้ามเขียนคำผิด สระลอย วรรณยุกต์ตกหล่น หรือใช้ภาษาวิบัติ/ภาษาแช็ต
+2. ห้ามใช้คำศัพท์ภาษาอังกฤษปนภาษาไทยโดยไม่จำเป็น (ให้ใช้ศัพท์บัญญัติแทน หากเป็นคำเฉพาะให้วงเล็บภาษาอังกฤษกำกับครั้งแรก)
+3. ก่อนสร้างภาพ ให้ตรวจสอบความถูกต้องของการสะกดคำทุกคำอย่างละเอียดอีกครั้ง
+
+แหล่งอ้างอิงภาษาไทยมาตรฐาน (สำนักงานราชบัณฑิตยสภา):
+- การสะกดคำและความหมาย: พจนานุกรม ฉบับราชบัณฑิตยสถาน พ.ศ. 2554 (dictionary.orst.go.th)
+- คำทับศัพท์และศัพท์วิชาการ: ฐานข้อมูลศัพท์บัญญัติและคำทับศัพท์ สำนักงานราชบัณฑิตยสภา (coined-word.orst.go.th และ transliteration.orst.go.th)
+- การใช้เครื่องหมายวรรคตอน: หลักเกณฑ์การใช้เครื่องหมายวรรคตอนและเครื่องหมายอื่น ๆ ฉบับราชบัณฑิตยสถาน`;
+
+        const PAGE_COUNT_OPTIONS = [
+            { value: 1, label: '1 หน้า (A4 ฉบับกระชับ)' },
+            { value: 2, label: '2 หน้า (หน้า-หลัง / ต่อเนื่อง)' },
+            { value: 3, label: '3 หน้า (ชุดการเรียนรู้ 3 หน้า)' },
+            { value: 4, label: '4 หน้า (ชุดการเรียนรู้ 4 หน้า)' },
+            { value: 5, label: '5 หน้า (ชุดการเรียนรู้ 5 หน้า)' },
+            { value: 6, label: '6 หน้า (ชุดการเรียนรู้ 6 หน้า)' },
+            { value: 8, label: '8 หน้า (ชุดเอกสาร 8 หน้า)' },
+            { value: 10, label: '10 หน้า (ชุดเอกสารฉบับเต็ม 10 หน้า)' }
+        ];
+
+        function getEnglishGradeCEFRRule(grade) {
+            let levelSpec = '';
+            if (grade === 'อนุบาล') {
+                levelSpec = 'ระดับปฐมวัย/อนุบาล (Pre-A1 Starters): ใช้คำศัพท์พื้นฐานสั้นๆ ง่ายๆ 1–2 พยางค์ วลีหรือประโยคสั้นมาก (3–5 คำ) เน้นภาพประกอบสื่อความหมายชัดเจนและคำซ้ำที่เด็กจดจำง่าย';
+            } else if (['ป.1', 'ป.2', 'ป.3'].includes(grade)) {
+                levelSpec = 'ระดับประถมศึกษาตอนต้น ป.1–ป.3 (Pre-A1 to A1 Beginner): ใช้คำศัพท์รอบตัวพื้นฐานและประโยคโครงสร้างอย่างง่าย (Simple Sentences) คำสั่งสั้นกระชับเข้าใจทันที';
+            } else if (['ป.4', 'ป.5', 'ป.6'].includes(grade)) {
+                levelSpec = 'ระดับประถมศึกษาตอนปลาย ป.4–ป.6 (A1 to A2 Elementary): ใช้ประโยคสนทนาในชีวิตประจำวัน ไวยากรณ์พื้นฐาน และบทอ่านสั้นๆ ที่เหมาะสมกับวัยประถมปลาย';
+            } else if (['ม.1', 'ม.2', 'ม.3'].includes(grade)) {
+                levelSpec = 'ระดับมัธยมศึกษาตอนต้น ม.1–ม.3 (A2 to B1 Pre-Intermediate): ใช้โครงสร้างประโยคที่ซับซ้อนขึ้น คำศัพท์เชิงวิชาการเบื้องต้น และทักษะการอ่านคิดวิเคราะห์';
+            } else {
+                levelSpec = 'ระดับมัธยมศึกษาตอนปลาย ม.4–ม.6 (B1 to B2 Intermediate / Upper-Intermediate): ใช้ภาษาอังกฤษเชิงวิชาการ บทความวิเคราะห์ คำศัพท์ระดับสากล และโจทย์ทักษะขั้นสูง';
+            }
+
+            return `กฎเหล็กเฉพาะวิชาภาษาอังกฤษ (STRICT ENGLISH-ONLY OUTPUT BY GRADE LEVEL — บังคับใช้ 100%):
+1. ห้ามมีภาษาไทยปรากฏบนชิ้นงานเด็ดขาด (NO THAI TEXT ALLOWED ON OUTPUT): ข้อความทุกตัวอักษรที่ปรากฏบนสื่อการสอน ใบความรู้ ใบงาน หัวข้อเรื่อง คำชี้แจง (Instructions) ช่องกรอกข้อมูลนักเรียน (Name / Class / No.) ตัวอย่าง (Example) โจทย์คำถาม ตัวเลือก (A, B, C, D) ป้ายกำกับ และเฉลย (Answer Key) ต้องเป็นภาษาอังกฤษล้วน 100% เท่านั้น
+2. มาตรฐานระดับภาษาตามช่วงชั้น (${grade}):
+   - ${levelSpec}
+3. การตรวจสอบความถูกต้อง: ตรวจสอบไวยากรณ์ (Grammar) การสะกดคำ (Spelling) และเครื่องหมายวรรคตอนภาษาอังกฤษให้ถูกต้องตามมาตรฐานสากล 100% ก่อนสร้างผลงาน`;
+        }
+
+        const WORKSHEET_ACTIVITIES = [
+            { id: 'matching', name: 'แบบจับคู่', instruction: 'แบบจับคู่ (Matching) : โยงเส้นจับคู่ความสัมพันธ์ระหว่างภาพ คำศัพท์ หรือความหมายที่เกี่ยวข้องกัน จัดเป็น 2 คอลัมน์ 4-6 คู่ คอลัมน์ซ้ายเป็นโจทย์มีหมายเลขกำกับและมีจุดวงกลมทึบต่อท้าย คอลัมน์ขวาเป็นตัวเลือกมีจุดวงกลมทึบอยู่ด้านหน้า เว้นช่องกลางกว้างสำหรับลากเส้น นักเรียนลากเส้นจากจุดซ้ายไปยังจุดขวาที่ถูกต้อง' },
+            { id: 'fill_blanks', name: 'แบบเติมคำในช่องว่าง', instruction: 'แบบเติมคำในช่องว่าง (Fill in the Blanks) : เติมคำที่ถูกต้องลงในช่องว่างของประโยคให้สมบูรณ์ วางกล่องคลังคำไว้ด้านบนของข้อ เป็นกรอบสี่เหลี่ยมมุมมนพื้นสีอ่อน มีหัวกล่องว่าคลังคำ ภายในเรียงคำให้เลือกในแนวนอนเว้นระยะเท่ากัน ด้านล่างเป็นประโยค 4-6 ข้อมีหมายเลขกำกับ แต่ละข้อมีเส้นใต้ยาวเท่ากันทุกช่องสำหรับเติมคำ' },
+            { id: 'true_false', name: 'แบบถูก-ผิด', instruction: 'แบบถูก-ผิด (True/False) : พิจารณาข้อความ 4-6 ข้อที่มีหมายเลขกำกับ ด้านหน้าหรือด้านหลังแต่ละข้อมีสัญลักษณ์วงกลมคู่ (✓ / ✗) หรือช่องสี่เหลี่ยม [ ] ถูก / [ ] ผิด ขนาดเท่ากันให้นักเรียนทำเครื่องหมาย' },
+            { id: 'sequencing', name: 'แบบเรียงลำดับ', instruction: 'แบบเรียงลำดับ (Sequencing) : เรียงลำดับเหตุการณ์ ขั้นตอน หรือกระบวนการให้ถูกต้อง จัดวางภาพหรือข้อความ 4-5 รายการแบบสลับลำดับ แต่ละรายการมีช่องสี่เหลี่ยมว่างขนาดเท่ากันสำหรับเขียนหมายเลขลำดับที่ 1 ถึง 5' },
+            { id: 'multiple_choice', name: 'แบบเลือกตอบ/ปรนัย', instruction: 'แบบเลือกตอบ/ปรนัย (Multiple Choice) : เลือกคำตอบที่ถูกต้องที่สุดจากตัวเลือก ก ข ค ง วางเป็นคำถาม 4-6 ข้อเรียงลงมามีหมายเลขกำกับ ใต้คำถามแต่ละข้อมีตัวเลือก 4 ตัวเลือกจัดเป็น 2 แถวหรือแนวตั้ง แต่ละตัวเลือกมีวงกลมหรือช่องสี่เหลี่ยมว่างอยู่ด้านหน้าให้ทำเครื่องหมาย ตัวอักษร ก ข ค ง ขนาดเท่ากันทุกตัว' },
+            { id: 'short_answer', name: 'แบบเขียนตอบ/อัตนัย', instruction: 'แบบเขียนตอบ/อัตนัย (Short Answer) : เขียนตอบอธิบายเหตุผลหรือแสดงความคิดเห็นสั้น ๆ วางคำถาม 2-4 ข้อมีหมายเลขกำกับ ใต้คำถามแต่ละข้อเว้นเส้นบรรทัดแนวนอน 2-3 เส้นยาวเต็มความกว้างเท่ากันทุกข้อสำหรับเขียนคำตอบ' },
+            { id: 'code_breaking', name: 'แบบถอดรหัสลับ', instruction: 'แบบถอดรหัสลับ (Code Breaking) : ถอดรหัสเพื่อไขหาคำตอบที่ซ่อนอยู่ ด้านบนมีตารางกุญแจรหัสแสดงคู่ของสัญลักษณ์หรือตัวเลขกับตัวอักษรอย่างครบถ้วน ด้านล่างเป็นแถวของรหัส 3-5 ชุด แต่ละรหัสมีช่องสี่เหลี่ยมว่างเรียงกันใต้สัญลักษณ์แต่ละตัวสำหรับเติมตัวอักษรที่ถอดได้' },
+            { id: 'maze', name: 'แบบเขาวงกต', instruction: 'แบบเขาวงกต (Maze) : ลากเส้นหาทางออกจากจุดเริ่มต้นไปยังเส้นชัยที่สอดคล้องกับคำตอบที่ถูกต้อง วาดเส้นทางเขาวงกตชัดเจนไม่ซับซ้อนจนเกินไป มีทางแยกหลอกและมีทางออกที่ถูกต้องเพียงเส้นทางเดียว' },
+            { id: 'word_search', name: 'แบบปริศนาคำศัพท์', instruction: 'แบบปริศนาคำศัพท์ (Crossword/Word Search) : ค้นหาและเติมคำศัพท์ในตารางปริศนา วาดตารางช่องสี่เหลี่ยมขนาดเท่ากันประมาณ 8x8 ถึง 12x12 ช่อง เส้นตารางชัดเจน ด้านข้างหรือด้านล่างมีรายการคำใบ้พร้อมหมายเลขกำกับแนวตั้งและแนวนอน หากเป็นแบบค้นหาคำให้ซ่อนคำไว้ในตารางจริงและมีรายการคำที่ต้องหาอยู่ในกรอบด้านล่าง' },
+            { id: 'mind_map', name: 'แบบแผนผังความคิด', instruction: 'แบบแผนผังความคิด (Mind Mapping) : สรุปองค์ความรู้ลงในแผนผังความคิด วาดหัวข้อหลักไว้ตรงกลางในกรอบวงรีหรือก้อนเมฆ แตกกิ่งก้านออกเป็น 4-6 กิ่งย่อย แต่ละกิ่งมีกรอบว่างหรือเส้นบรรทัดขนาดเท่ากันให้นักเรียนเขียนสรุปใจความสำคัญ' },
+            { id: 'board_game', name: 'แบบเกมกระดาน', instruction: 'แบบเกมกระดาน (Board Game) : เกมเดินตามช่องคำถามความรู้ วาดเส้นทางช่องเดินต่อเนื่อง 12-16 ช่องจากจุดเริ่มต้น (START) ไปยังเส้นชัย (FINISH) ภายในช่องมีโจทย์คำถามสั้น ๆ หรือภารกิจให้นักเรียนตอบเพื่อเดินหน้าต่อ' },
+            { id: 'tracing', name: 'แบบตามรอยประ', instruction: 'แบบตามรอยประ (Tracing) : ฝึกเขียนตัวอักษร คำศัพท์ หรือลากเส้นตามรอยประ เส้นรอยประคมชัดสม่ำเสมอ มีลูกศรเล็ก ๆ บอกทิศทางการเริ่มเขียนในตัวแรก และเว้นบรรทัดว่างให้ฝึกเขียนด้วยตนเอง' },
+            { id: 'connect_dots', name: 'แบบลากเส้นต่อจุด', instruction: 'แบบลากเส้นต่อจุด (Connect the Dots) : ลากเส้นเชื่อมจุดตามลำดับตัวเลข 1-20 หรือตัวอักษรเพื่อต่อเติมเป็นภาพที่สมบูรณ์ จุดวงกลมชัดเจนพร้อมตัวเลขกำกับเรียงลำดับไม่ทับซ้อนกัน' },
+            { id: 'color_by_code', name: 'แบบระบายสีตามรหัส', instruction: 'แบบระบายสีตามรหัส (Color by Code) : ระบายสีลงในช่องภาพตามรหัสคำตอบที่กำหนด ด้านบนมีแถบตารางกำหนดรหัสสีคู่กับคำตอบหรือผลลัพธ์ ด้านล่างเป็นภาพลายเส้นแบ่งช่องชัดเจนที่มีโจทย์หรือรหัสกำกับในแต่ละช่อง' },
+            { id: 'categorizing', name: 'แบบจำแนกหมวดหมู่', instruction: 'แบบจำแนกหมวดหมู่ (Categorizing) : จัดกลุ่มคำศัพท์หรือภาพลงในตารางหมวดหมู่ให้ถูกต้อง ด้านบนมีกรอบรายการคำศัพท์หรือภาพ 6-8 รายการ ด้านล่างแบ่งเป็นตาราง 2-3 คอลัมน์พร้อมหัวตารางชัดเจนและพื้นที่ว่างสำหรับเขียนจำแนก' },
+            { id: 'labeled_diagram', name: 'แบบติดป้ายแผนภาพ', instruction: 'แบบติดป้ายแผนภาพ (Labeled Diagram) : เติมชื่อส่วนประกอบของภาพให้ถูกต้อง วาดภาพประกอบหลักตรงกลางอย่างชัดเจน มีเส้นชี้ไปยังส่วนประกอบสำคัญ 4-6 จุด ปลายเส้นแต่ละจุดมีกรอบสี่เหลี่ยมว่างขนาดเท่ากันสำหรับเติมคำตอบ' },
+            { id: 'spot_difference', name: 'แบบหาความแตกต่างของภาพ', instruction: 'แบบหาความแตกต่างของภาพ (Spot the Difference) : เปรียบเทียบภาพคู่ซ้าย-ขวาที่คล้ายกันและวงกลมจุดที่แตกต่างกัน 5 จุด วางภาพขนาดเท่ากันคู่กันชัดเจน พร้อมช่องเขียนสรุปจุดที่พบด้านล่าง' },
+            { id: 'timeline', name: 'แบบเส้นเวลา', instruction: 'แบบเส้นเวลา (Timeline) : เรียงลำดับเหตุการณ์สำคัญบนเส้นเวลา วาดเส้นแกนเวลาแนวนอนหรือแนวตั้งพร้อมจุดเชื่อม 4-5 ช่วงเวลา แต่ละจุดมีกรอบว่างขนาดเท่ากันสำหรับเติมปี พ.ศ. หรือเหตุการณ์สำคัญ' },
+            { id: 'venn_diagram', name: 'แบบแผนภาพเวนน์', instruction: 'แบบแผนภาพเวนน์ (Venn Diagram) : เปรียบเทียบความเหมือนและความแตกต่าง วาดวงกลม 2 วงซ้อนทับกันตรงกลาง มีหัวข้อกำกับแต่ละวงและส่วนตรงกลางที่ซ้อนทับกัน พร้อมเส้นบรรทัดภายในสำหรับเขียนเปรียบเทียบ' },
+            { id: 'reading_table', name: 'แบบอ่านตารางและแผนภูมิ', instruction: 'แบบอ่านตารางและแผนภูมิ (Reading Tables & Charts) : วิเคราะห์ข้อมูลจากตารางหรือแผนภูมิแท่งอย่างง่าย ด้านบนแสดงตารางข้อมูลหรือแผนภูมิชัดเจน ด้านล่างมีคำถาม 3-4 ข้อพร้อมเส้นบรรทัดสำหรับเขียนคำตอบ' },
+            { id: 'word_circle', name: 'แบบดูภาพวงกลมคำ', instruction: 'แบบดูภาพวงกลมคำ (Picture Word Circle) : สังเกตภาพประกอบและวงกลมคำศัพท์ที่ตรงกับภาพ จัดเป็น 4-6 ข้อ แต่ละข้อมีภาพวาดชัดเจนคู่กับตัวเลือกคำศัพท์ 3 คำเรียงแนวนอนให้นักเรียนวงกลมคำที่ถูกต้อง' },
+            { id: 'story_writing', name: 'แบบเขียนเรื่องจากภาพ', instruction: 'แบบเขียนเรื่องจากภาพ (Picture Story Writing) : สังเกตภาพเหตุการณ์และเขียนบรรยายเรื่องราว วาดกรอบภาพเหตุการณ์ขนาดใหญ่ชัดเจนด้านบน ด้านล่างมีเส้นบรรทัดแนวนอน 4-5 บรรทัดเต็มความกว้างสำหรับเขียนแต่งเรื่อง' },
+            { id: 'cut_paste', name: 'แบบตัดแปะ (เส้นปะสำหรับตัด)', instruction: 'แบบตัดแปะ (Cut & Paste) : ตัดชิ้นส่วนภาพหรือคำศัพท์ตามเส้นปะนำไปติดลงในช่องคำตอบให้ถูกต้อง ด้านบนเป็นตารางกรอบคำตอบว่าง ด้านล่างแยกส่วนชิ้นส่วน 4-6 ชิ้นล้อมรอบด้วยกรอบเส้นปะรูปกรรไกร (Dashed Cut-out Line) ชัดเจนสำหรับให้นักเรียนตัด' }
+        ];
+
+        const WORKSHEET_STYLES = [
+            'การ์ตูน 2D Cute Cartoon น่ารักสดใส',
+            '3D การ์ตูนสมจริงน่ารัก Cute 3D Cartoon สไตล์ Pixar',
+            'Flat Design มินิมอลทันสมัย',
+            'Watercolor สีน้ำอ่อนละมุน',
+            'Isometric 3D มิติสวยงาม',
+            'Hand-drawn Doodle ลายเส้นวาดมือ',
+            'Kawaii สไตล์ญี่ปุ่นน่ารัก',
+            'Paper Cut กระดาษตัดซ้อนชั้น',
+            'Chalkboard กระดานดำสไตล์ห้องเรียน',
+            'Pastel โทนสีพาสเทลนุ่มนวล',
+            'Modern Infographic กราฟิกข้อมูลทันสมัย',
+            'Sticker Style สไตล์สติกเกอร์สดใส',
+            'Storybook สไตล์หนังสือนิทาน',
+            'ลายเส้นขาวดำ Black & White Line Art การ์ตูนน่ารัก (ประหยัดหมึก)',
+            'Coloring Book ลายเส้นขาวดำสำหรับระบายสี (Outline เส้นชัด)'
+        ];
+
+        const MEDIA_STYLES = [
+            'การ์ตูน 3D Cute Cartoon (Pixar Style)',
+            'การ์ตูน 2D สดใส โทนพาสเทล',
+            'Flat Design Infographic ทันสมัย',
+            'Isometric 3D สามมิติ',
+            'Claymation ดินปั้นน่ารัก',
+            'Kawaii / Chibi น่ารักสุด ๆ',
+            'Semi-Realistic กึ่งสมจริง',
+            'Watercolor สีน้ำอบอุ่น',
+            'Paper Cut กระดาษตัดซ้อนชั้น',
+            'Line Art & Doodle ลายเส้นน่ารัก',
+            'Minimal Vector เรียบโมเดิร์น',
+            'Comic / Manga สไตล์การ์ตูนช่อง',
+            'Neon Tech / Cyber โทนเทคโนโลยี',
+            'Storybook นิทานภาพประกอบ',
+            'Realistic Photo สมจริง',
+            'ลายเส้นขาวดำ Black & White Line Art การ์ตูนน่ารัก (ประหยัดหมึก)',
+            'การ์ตูน 3D สมจริงน่ารัก กรอบใบไม้-ดอกไม้ธรรมชาติประดับ (สไตล์โปสเตอร์การศึกษา)'
+        ];
+
+        const MEDIA_SIZES = [
+            '1:1 จัตุรัส (โพสต์โซเชียล)',
+            '4:5 แนวตั้ง (โพสต์ฟีด)',
+            '9:16 แนวตั้ง (สตอรี่/รีล)',
+            '16:9 แนวนอน (สไลด์นำเสนอ)',
+            'A4 แนวตั้ง (ใบงาน/โปสเตอร์)',
+            'A4 แนวนอน (สื่อหน้ากว้าง)',
+            '3:2 แนวนอน (การ์ดความรู้)',
+            '2:3 แนวตั้ง (โปสเตอร์)'
+        ];
+
+        const MEDIA_FORMATS = [
+            'โปสเตอร์ความรู้ (Educational Knowledge Poster)',
+            'การ์ดคำศัพท์ Flashcard',
+            'แผนผังความคิด Mind Map',
+            'Mind Mapping แผนผังความคิด (Tony Buzan · กิ่งโค้งสีสัน + ไอคอนทุกกิ่ง)',
+            'Mind Map ลายมือวาดสี (Hand-drawn Mind Map)',
+            'ไทม์ไลน์เหตุการณ์ (Timeline)',
+            'แผนภาพลำดับขั้นตอน (Process)',
+            'ตารางเปรียบเทียบ (Comparison Table)',
+            'แผนภาพวัฏจักร (Cycle Diagram)',
+            'แผนภาพชี้ป้ายส่วนประกอบ (Labeled Diagram)',
+            'การ์ตูนช่องเล่าเรื่อง (Comic Strip)',
+            'แผนภูมิข้อมูล/กราฟ (Data Chart)',
+            'แผนภาพจำแนกหมวดหมู่ (Tree Diagram)',
+            'การ์ดบุคคล/สถานที่สำคัญ (Profile Card)',
+            'โปสเตอร์เกร็ดน่ารู้ (Did You Know)',
+            'โปสเตอร์คำคม/ข้อคิด (Quote Poster)',
+            'แผ่นพับ 3 ตอน — ด้านนอก (ปก/ปกหลัง)',
+            'แผ่นพับ 3 ตอน — ด้านใน (เนื้อหา 3 คอลัมน์)',
+            'แผนภาพเวนน์ (Venn Diagram)',
+            'พีระมิด/แผนภาพลำดับชั้น (Pyramid)',
+            'แผนที่ประกอบเนื้อหา (Illustrated Map)',
+            'ผังงาน Flowchart (มีกล่องตัดสินใจ)',
+            'ภาพตัดขวาง/ภาพแยกส่วน (Cross-section)',
+            'ภาพเปรียบเทียบก่อน-หลัง (Before & After)',
+            'โปสเตอร์ 5W1H',
+            'อินโฟกราฟิกแนวตั้งยาว (Long Infographic)',
+            'สไลด์สื่อการสอน (10 สไลด์) - ใช้ได้กับ ChatGPT Plus',
+            'บอร์ดความรู้ (8 ภาพ) - ใช้ได้กับ ChatGPT Plus',
+            'วิดีโอสื่อการสอน Google Flow (Veo 3) - ใช้ได้กับ Google Flow',
+            'สถานการณ์จำลองชวนคิด (Scenario-Based Poster)'
+        ];
+
+        const MEDIA_LAYOUT_BLUEPRINTS = [
+            'จัดวางหัวข้อหลักขนาดใหญ่โดดเด่นด้านบน แบ่งพื้นที่เนื้อหาเป็นกล่องข้อย่อย 3-5 หัวข้อพร้อมภาพประกอบและคำอธิบายกระชับอ่านง่าย',
+            'แบ่งหน้ากระดาษเป็นตารางบัตรคำศัพท์ 4-6 ใบเท่ากัน แต่ละใบมีภาพประกอบชัดเจนตรงกลางและคำศัพท์/ความหมายด้านล่าง พร้อมเส้นขอบตัดบัตร',
+            'วางหัวข้อหลักไว้ตรงกลางภาพ แตกกิ่งก้านสาขาออกเป็น 4-6 กิ่งหลัก พร้อมกล่องข้อความสรุปใจความสำคัญและไอคอนประกอบทุกกิ่ง',
+            'ใช้หลักการ Tony Buzan วางภาพหัวข้อหลักตรงกลาง วาดกิ่งโค้งออร์แกนิกสีสันสดใสแยกตามหมวดหมู่ มีคำสำคัญสั้นๆ บนเส้นกิ่งและไอคอนเล็กๆ กำกับทุกกิ่ง',
+            'ออกแบบสไตล์สมุดโน้ตจดสรุปลายมือวาดสี (Hand-drawn) มีหัวข้อตรงกลาง ล้อมรอบด้วยกรอบเมฆ ลูกศรชี้เชื่อมโยง และภาพสเก็ตช์สีไม้/สีเมจิกน่ารัก',
+            'วาดเส้นแกนเวลา (Timeline) ต่อเนื่องจากซ้ายไปขวาหรือบนลงล่าง แบ่งช่วงเหตุการณ์สำคัญ 4-6 จุด พร้อมตัวเลขลำดับ/วันที่ ภาพเหตุการณ์ และคำบรรยายสั้นๆ',
+            'จัดวางเป็นขั้นตอนต่อเนื่อง 1-2-3-4-5 มีลูกศรชี้ทิศทางชัดเจนจากจุดเริ่มต้นไปสู่ผลลัพธ์ แต่ละขั้นมีภาพสาธิตและคำอธิบายสั้นกระชับ',
+            'แบ่งพื้นที่เป็นตารางเปรียบเทียบ 2-3 คอลัมน์ชัดเจน หัวตารางแยกสีแตกต่างกัน เปรียบเทียบคุณสมบัติ ลักษณะ หรือตัวอย่างของหัวข้อแบบบรรทัดต่อบรรทัด',
+            'จัดวางองค์ประกอบเป็นวงกลมหมุนวนต่อเนื่อง (Cycle) มีลูกศรโค้งเชื่อมโยง 4-6 ระยะ แสดงการเปลี่ยนแปลงหรือกระบวนการที่หมุนเวียนครบวงจร',
+            'วางภาพประกอบขนาดใหญ่คมชัดไว้ตรงกลางภาพ มีเส้นชี้ไปยังส่วนประกอบสำคัญ 5-8 จุด พร้อมป้ายชื่อและคำอธิบายหน้าที่สั้นๆ รอบภาพอย่างเป็นระเบียบ',
+            'แบ่งหน้ากระดาษเป็นช่องการ์ตูนเล่าเรื่อง 4-6 ช่องเรียงลำดับ มีตัวละครสนทนาโต้ตอบผ่านบอลลูนคำพูด (Speech Bubbles) อธิบายเนื้อหาอย่างสนุกสนาน',
+            'นำเสนอข้อมูลในรูปแบบแผนภูมิแท่ง แผนภูมิวงกลม หรือกราฟเปรียบเทียบตัวเลขที่เข้าใจง่าย พร้อมไอคอนประกอบและกล่องสรุปข้อค้นพบสำคัญ',
+            'จัดโครงสร้างแบบแผนภูมิต้นไม้ (Tree Diagram) จากหัวข้อใหญ่ด้านบน แตกแขนงลงมาเป็นหมวดหมู่ย่อย 2-3 ระดับ พร้อมตัวอย่างประกอบในแต่ละกลุ่ม',
+            'ออกแบบเป็นการ์ดโปรไฟล์ข้อมูลสำคัญ มีกรอบภาพเด่นด้านบน/ด้านซ้าย ตามด้วยข้อมูลจำเพาะ ประวัติ จุดเด่น และเกร็ดสำคัญจัดเรียงเป็นข้อๆ',
+            'จัดวางสไตล์โปสเตอร์เกร็ดความรู้ชวนว้าว มีหัวข้อ "รู้หรือไม่?" โดดเด่น ล้อมรอบด้วยกล่องความรู้สั้นๆ 3-5 ข้อและภาพประกอบชวนสงสัย',
+            'เน้นข้อความคติสอนใจ ข้อคิด หรือหลักการสำคัญด้วยตัวอักษรขนาดใหญ่สวยงามตรงกลาง ล้อมรอบด้วยกรอบตกแต่งและภาพประกอบสื่อความหมายเชิงบวก',
+            'แบ่งพื้นที่แนวนอนเป็น 3 คอลัมน์เท่ากันสำหรับพับ 3 ตอน (ส่วนปกหน้า ปกหลัง และปกใน) มีเส้นพับบางๆ ระบุตำแหน่ง พร้อมภาพปกดึงดูดสายตาและข้อมูลติดต่อ',
+            'แบ่งพื้นที่แนวนอนเป็น 3 คอลัมน์เนื้อหาด้านในเท่ากัน นำเสนอเนื้อหาต่อเนื่องจากซ้ายไปขวา อ่านง่าย มีหัวข้อย่อยและภาพประกอบสมดุลทุกคอลัมน์',
+            'วาดวงกลมโปร่งแสง 2-3 วงซ้อนทับกันตรงกลาง พื้นที่ด้านซ้ายและขวาแสดงจุดแตกต่าง ส่วนพื้นที่ซ้อนทับตรงกลางแสดงจุดร่วมที่เหมือนกันอย่างชัดเจน',
+            'วาดรูปสามเหลี่ยมพีระมิดแบ่งเป็นชั้นแนวนอน 3-5 ชั้นจากฐานขึ้นสู่ยอด แสดงลำดับความสำคัญ สัดส่วน หรือโครงสร้างระดับชั้นพร้อมป้ายกำกับทุกชั้น',
+            'ออกแบบเป็นแผนที่ภาพประกอบ (Illustrated Map) มีเส้นทางเชื่อมโยงสถานที่ จุดสำคัญ หรือแหล่งเรียนรู้ของเนื้อหา พร้อมหมุดปักตำแหน่งและคำอธิบายสั้นๆ',
+            'วาดผังงานระบบ (Flowchart) ใช้สัญลักษณ์มาตรฐาน (จุดเริ่มต้น กล่องกระบวนการ กล่องตัดสินใจใช่/ไม่ใช่ และจุดสิ้นสุด) เชื่อมด้วยลูกศรบอกทิศทางชัดเจน',
+            'วาดภาพวัตถุ โครงสร้าง หรือสถานที่แบบผ่าครึ่ง/แยกชิ้นส่วน (Cross-section / Exploded View) ให้เห็นองค์ประกอบภายในอย่างละเอียดพร้อมเส้นชี้ป้ายชื่อ',
+            'แบ่งครึ่งภาพซ้าย-ขวา หรือบน-ล่าง ชัดเจน เปรียบเทียบสภาพหรือผลลัพธ์ "ก่อน (Before)" และ "หลัง (After)" พร้อมป้ายกำกับและจุดสังเกตความเปลี่ยนแปลง',
+            'แบ่งพื้นที่รอบหัวข้อหลักออกเป็น 6 กล่องคำถามสำคัญ ได้แก่ ใคร (Who) ทำอะไร (What) ที่ไหน (Where) เมื่อไร (When) ทำไม (Why) และอย่างไร (How)',
+            'จัดวางรูปแบบอินโฟกราฟิกแนวตั้งยาว แบ่งเนื้อหาเป็นตอนๆ ไล่ระดับจากบนลงล่าง เชื่อมสายตาด้วยเส้นนำสายตา ไอคอน และกราฟิกสรุปข้อมูลครบจบในหน้าเดียว',
+            'ออกแบบโครงสร้างชุดสไลด์นำเสนอ 10 สไลด์ต่อเนื่อง (สไลด์ที่ 1 หน้าปก, สไลด์ที่ 2 จุดประสงค์, สไลด์ที่ 3-8 เนื้อหาหลักทีละประเด็น, สไลด์ที่ 9 สรุป, สไลด์ที่ 10 คำถามชวนคิด)',
+            'ออกแบบเป็นชุดภาพบอร์ดความรู้ 8 ภาพย่อยขนาดเท่ากันในชุดเดียว แต่ละภาพนำเสนอ 1 หัวข้อย่อยสำคัญของเรื่องในสไตล์และโทนสีเดียวกันอย่างกลมกลืน',
+            'เขียนเป็นฉากวิดีโอสื่อการสอนเคลื่อนไหวความยาว 8 วินาที (สำหรับ Google Veo 3) ระบุมุมกล้อง การเคลื่อนไหวของตัวละครนำเรื่อง แสงสี และบรรยากาศการเรียนรู้ที่ชัดเจน',
+            'จัดวางเป็นโปสเตอร์สถานการณ์จำลองชวนคิด (Scenario-Based) ด้านบนเป็นภาพเหตุการณ์จำลองขนาดใหญ่พร้อมข้อความบรรยายสถานการณ์สั้นกระชับ 2–3 บรรทัด ด้านล่างเป็นกรอบคำถามชวนคิดวิเคราะห์และเชื่อมโยงสู่หลักการของบทเรียน'
+        ];
+
+        const SCENARIO_THEMES = [
+            { id: 'supermarket', name: '🛒 ตะลุยซูเปอร์มาร์เก็ตและร้านสะดวกซื้อ', detail: 'สถานการณ์การเลือกซื้อสินค้าในร้านสะดวกซื้อหรือซูเปอร์มาร์เก็ต การเปรียบเทียบราคา ปริมาณ ส่วนลด การคำนวณเงินทอน และการอ่านฉลากข้อมูลสินค้า', subjects: ['math', 'career', 'health', 'english', 'chinese', 'social'] },
+            { id: 'detective', name: '🕵️‍♂️ นักสืบไขปริศนาและจับผิดหลักฐาน', detail: 'สถานการณ์สวมบทบาทนักสืบรุ่นเยาว์ รวบรวมเบาะแส วิเคราะห์หลักฐาน จับผิดข้อมูลที่คลาดเคลื่อน และเรียงลำดับเหตุการณ์เพื่อไขปริศนาหาคำตอบที่ถูกต้อง', subjects: ['thai', 'science', 'coding', 'history', 'anticorrupt', 'is', 'english'] },
+            { id: 'travel', name: '✈️ วางแผนท่องเที่ยวและเปิดโลกกว้าง', detail: 'สถานการณ์การวางแผนเดินทางท่องเที่ยว การอ่านแผนที่ คำนวณระยะทางและเวลา การเรียนรู้วัฒนธรรมสถานที่สำคัญ และการสื่อสารต้อนรับนักท่องเที่ยว', subjects: ['social', 'history', 'english', 'chinese', 'math', 'art', 'dance'] },
+            { id: 'ecoworld', name: '🌱 ภารกิจรักษ์โลกและสิ่งแวดล้อมในชุมชน', detail: 'สถานการณ์การดูแลรักษาสิ่งแวดล้อม การคัดแยกขยะ การประหยัดพลังงาน การอนุรักษ์ทรัพยากรธรรมชาติและระบบนิเวศรอบตัว', subjects: ['science', 'biology', 'chemistry', 'social', 'career', 'is', 'special_days'] },
+            { id: 'socialmedia', name: '📱 โลกโซเชียลมีเดียและการรู้เท่าทันสื่อ', detail: 'สถานการณ์การใช้งานสื่อสังคมออนไลน์ การตรวจสอบข่าวจริงและข่าวปลอม (Fake News) มารยาทดิจิทัล ความปลอดภัยไซเบอร์ และการวิเคราะห์ข้อมูลบนสื่อออนไลน์', subjects: ['coding', 'ict', 'thai', 'anticorrupt', 'is', 'english', 'social'] },
+            { id: 'sciencelab', name: '🔬 ห้องทดลองนักวิทยาศาสตร์น้อย', detail: 'สถานการณ์การสำรวจและทดลองในห้องปฏิบัติการ การตั้งสมมติฐาน การสังเกตการเปลี่ยนแปลงทางกายภาพและเคมี การบันทึกผล และสรุปองค์ความรู้', subjects: ['science', 'physics', 'chemistry', 'biology', 'math', 'coding'] },
+            { id: 'bakery', name: '🧁 คาเฟ่ ร้านเบเกอรี่ และเชฟตัวน้อย', detail: 'สถานการณ์การทำอาหารและเปิดร้านเบเกอรี่จำลอง การตวงส่วนผสม การคำนวณสัดส่วนและต้นทุน การเลือกวัตถุดิบที่มีประโยชน์ และการออกแบบเมนู', subjects: ['math', 'career', 'health', 'art', 'chemistry', 'english', 'chinese'] },
+            { id: 'hospital', name: '🏥 โรงพยาบาล คลินิก และภารกิจดูแลสุขภาพ', detail: 'สถานการณ์ในคลินิกหรือโรงพยาบาล การดูแลสุขอนามัย โภชนาการอาหาร 5 หมู่ การทำงานของระบบอวัยวะในร่างกาย การป้องกันโรค และการปฐมพยาบาลเบื้องต้น', subjects: ['health', 'biology', 'science', 'career', 'thai'] },
+            { id: 'festival', name: '🎪 จัดงานเทศกาลและกิจกรรมโรงเรียน', detail: 'สถานการณ์การเตรียมจัดงานเทศกาล วันสำคัญ หรือกิจกรรมในโรงเรียน การวางแผนงบประมาณ แบ่งหน้าที่การทำงาน การออกแบบป้ายประชาสัมพันธ์ และการแสดงศิลปวัฒนธรรม', subjects: ['special_days', 'art', 'music', 'dance', 'thai', 'social', 'career', 'anticorrupt'] },
+            { id: 'futuretech', name: '🚀 ผจญภัยโลกอนาคต อวกาศ และเทคโนโลยี AI', detail: 'สถานการณ์โลกอนาคต การสำรวจอวกาศและดวงดาว การทำงานร่วมกับหุ่นยนต์และปัญญาประดิษฐ์ (AI) การเขียนอัลกอริทึมแก้ปัญหา และนวัตกรรมล้ำสมัย', subjects: ['coding', 'ict', 'physics', 'science', 'math', 'art', 'english'] }
+        ];
+
+        const SOCIAL_SCOPES = [
+            { id: 'family', name: '1. 🏠 ระดับครอบครัวและบ้าน', detail: 'กำหนดฉากหลังและบริบทให้อยู่ภายในครอบครัวและบ้าน (ชีวิตประจำวัน กิจกรรมร่วมกับพ่อแม่พี่น้อง การออมและการแบ่งเบาภาระในบ้าน)' },
+            { id: 'school', name: '2. 🏫 ระดับโรงเรียนและห้องเรียน', detail: 'กำหนดฉากหลังและบริบทให้อยู่ภายในโรงเรียนและห้องเรียน (กิจกรรมร่วมกับเพื่อนและคุณครู สหกรณ์โรงเรียน การปฏิบัติตามกฎระเบียบในสถานศึกษา)' },
+            { id: 'community', name: '3. 🏘️ ระดับชุมชนและท้องถิ่น', detail: 'กำหนดฉากหลังและบริบทให้อยู่ในระดับชุมชนและท้องถิ่น (ตลาดชุมชน ภูมิปัญญาท้องถิ่น สถานที่สำคัญและการร่วมมือพัฒนาหมู่บ้าน/ตำบล)' },
+            { id: 'country', name: '4. 🇹🇭 ระดับประเทศไทย', detail: 'กำหนดฉากหลังและบริบทให้อยู่ในระดับประเทศไทย (ประเพณีและวัฒนธรรมไทย เศรษฐกิจและสังคมไทย ข่าวสารและเหตุการณ์สำคัญระดับชาติ)' },
+            { id: 'global', name: '5. 🌍 ระดับอาเซียนและรอบโลก', detail: 'กำหนดฉากหลังและบริบทให้อยู่ในระดับอาเซียนและรอบโลก (การแลกเปลี่ยนวัฒนธรรมนานาชาติ สิ่งแวดล้อมโลก เทคโนโลยีและสถานการณ์สากลแนวข้อสอบ PISA)' }
+        ];
+
+        const MEDIA_CHARACTERS = [
+            'คุณครูฝรั่งการ์ตูนใจดี ถือป้าย ABC',
+            'นักเดินทางตัวน้อย สะพายเป้ ถือพาสปอร์ต',
+            'เจ้านกแก้วพูดได้ ถือลูกโป่งตัวอักษรอังกฤษ',
+            'น้องหนูถือลูกโลก ล้อมรอบด้วยคำทักทายหลายภาษา',
+            'คุณครูไทยใจดี ใส่ชุดสุภาพ ยิ้มแย้ม ถือไม้ชี้กระดาน',
+            'เด็กนักเรียนไทยชาย-หญิง ในชุดนักเรียนน่ารัก ยกมือถามด้วยความสงสัย',
+            'เจ้านกฮูกนักปราชญ์ สวมแว่นตาและหมวกรับปริญญา ถือหนังสือความรู้',
+            'หุ่นยนต์ผู้ช่วยอัจฉริยะตัวจิ๋ว หน้าจอยิ้มน่ารัก ชี้ไปที่ป้ายข้อมูล',
+            'น้องกระต่ายน้อยช่างจด สะพายกระเป๋าดินสอ ถือสมุดโน้ตและดินสอไม้',
+            'นักวิทยาศาสตร์ตัวจิ๋ว สวมเสื้อกาวน์และแว่นตานิรภัย ถือแว่นขยายสำรวจ',
+            'เจ้าแมวเหมียวขี้สงสัย ใส่ผ้าพันคอสีสดใส นั่งอยู่ข้างกองหนังสือ',
+            'น้องหมีแพนด้าผู้รอบรู้ นั่งชี้ป้ายหัวข้อด้วยท่าทางเป็นมิตร',
+            'นักบินอวกาศตัวน้อย ลอยตัวน่ารัก ชี้ไปยังดวงดาวและกล่องข้อความ',
+            'น้องช้างน้อยใจดี ตัวแทนความเป็นไทย ยิ้มสดใส ถือป้ายยินดีต้อนรับ',
+            'ภูติน้อยแห่งการเรียนรู้ มีปีกใสประกายวิบวับ ถือไม้คทาเสกความรู้',
+            'แก๊งเพื่อนสัตว์ป่าแสนซน (สิงโต ยีราฟ ลิงน้อย) ยืนเรียงแถวชูนิ้วชี้หัวข้อ',
+            'น้องดินสอและยางลบมีชีวิต หน้าตาน่ารัก ยิ้มแย้ม คอยแนะนำขั้นตอน',
+            'นักสืบจิ๋วถือแว่นขยาย สวมหมวกนักสืบ คอยชี้จุดสำคัญที่ต้องสังเกต',
+            'พ่อมดและแม่มดตัวน้อย กำลังปรุงสูตรความรู้ในหม้อวิเศษ'
+        ];
+
+        // =====================================================================
+        // 3. ข้อมูล 13 ระดับชั้น × 9 กลุ่มสาระฯ × 20 รายวิชา (อิงหลักสูตร สพฐ.)
+        // =====================================================================
+        const GRADES = ['ทุกระดับชั้น', 'อนุบาล', 'ป.1', 'ป.2', 'ป.3', 'ป.4', 'ป.5', 'ป.6', 'ม.1', 'ม.2', 'ม.3', 'ม.4', 'ม.5', 'ม.6'];
+
+        const LEARNING_AREAS = [
+            { id: 'all', name: 'ทุกกลุ่มสาระการเรียนรู้', subjectIds: ['thai', 'math', 'science', 'coding', 'ict', 'physics', 'chemistry', 'biology', 'social', 'history', 'anticorrupt', 'health', 'art', 'music', 'dance', 'career', 'english', 'chinese', 'is', 'special_days'] },
+            { id: 'area_thai', name: '1. กลุ่มสาระฯ ภาษาไทย', subjectIds: ['thai'] },
+            { id: 'area_math', name: '2. กลุ่มสาระฯ คณิตศาสตร์', subjectIds: ['math'] },
+            { id: 'area_sci', name: '3. กลุ่มสาระฯ วิทยาศาสตร์และเทคโนโลยี', subjectIds: ['science', 'coding', 'ict', 'physics', 'chemistry', 'biology'] },
+            { id: 'area_social', name: '4. กลุ่มสาระฯ สังคมศึกษา ศาสนา และวัฒนธรรม', subjectIds: ['social', 'history', 'anticorrupt'] },
+            { id: 'area_health', name: '5. กลุ่มสาระฯ สุขศึกษาและพลศึกษา', subjectIds: ['health'] },
+            { id: 'area_art', name: '6. กลุ่มสาระฯ ศิลปะ', subjectIds: ['art', 'music', 'dance'] },
+            { id: 'area_career', name: '7. กลุ่มสาระฯ การงานอาชีพ', subjectIds: ['career'] },
+            { id: 'area_lang', name: '8. กลุ่มสาระฯ ภาษาต่างประเทศ', subjectIds: ['english', 'chinese'] },
+            { id: 'area_activity', name: '9. กิจกรรมพัฒนาผู้เรียนและวันสำคัญ', subjectIds: ['is', 'special_days'] }
+        ];
+
+        const SUBJECTS = [
+            { id: 'thai', areaId: 'area_thai', name: 'ภาษาไทย', icon: '📖', topics: ['พยัญชนะไทย ก-ฮ และสระพื้นฐาน', 'การประสมคำและสะกดคำเบื้องต้น', 'มาตราตัวสะกด 8 มาตรา', 'คำควบกล้ำแท้และไม่แท้', 'อักษรนำและคำที่มี ฤ ฤๅ', 'คำเป็น คำตาย และการผันวรรณยุกต์', 'ชนิดของคำในภาษาไทย (นาม สรรพนาม กริยา วิเศษณ์)', 'คำราชาศัพท์และคำสุภาพ', 'สำนวน สุภาษิต และคำพังเพยไทย', 'การเขียนย่อความและเรียงความ', 'การวิเคราะห์วรรณคดีและร้อยกรองไทย'] },
+            { id: 'math', areaId: 'area_math', name: 'คณิตศาสตร์', icon: '🔢', topics: ['การนับจำนวนและตัวเลข 1-100', 'การบวกและการลบจำนวนนับ', 'การคูณและการหารเบื้องต้น', 'รูปเรขาคณิต 2 มิติ และ 3 มิติ', 'การวัดความยาว น้ำหนัก และปริมาตร', 'เวลาและการอ่านนาฬิกา', 'เศษส่วนและทศนิยม', 'ร้อยละ อัตราส่วน และสมการเชิงเส้น', 'สถิติ ความน่าจะเป็น และฟังก์ชัน', 'ตรีโกณมิติและเวกเตอร์เบื้องต้น', 'แคลคูลัสเบื้องต้นและลำดับอนุกรม'] },
+            { id: 'science', areaId: 'area_sci', name: 'วิทยาศาสตร์ฯ', icon: '🔬', topics: ['ส่วนประกอบของพืชและหน้าที่', 'วัฏจักรชีวิตของสัตว์และพืช', 'ตัวเราและอวัยวะรับสัมผัส', 'วัสดุรอบตัวและสมบัติของวัสดุ', 'แรงและการเคลื่อนที่เบื้องต้น', 'สถานะของสสารและการเปลี่ยนแปลง', 'ระบบสุริยะ ดวงดาว และปรากฏการณ์บนท้องฟ้า', 'ระบบนิเวศและห่วงโซ่อาหาร', 'พลังงานทดแทนและการอนุรักษ์สิ่งแวดล้อม'] },
+            { id: 'coding', areaId: 'area_sci', name: 'วิทยาการคำนวณ', icon: '💻', topics: ['การแก้ปัญหาอย่างเป็นขั้นตอน (Algorithm)', 'การเขียนโปรแกรมแบบ Unplugged Coding', 'การเขียนโปรแกรมด้วยบัตรคำสั่งและบล็อกโค้ด (Scratch)', 'แนวคิดเชิงคำนวณ (Computational Thinking)', 'การตรวจหาข้อผิดพลาดของโปรแกรม (Debugging)', 'การรวบรวม ประมวลผล และนำเสนอข้อมูล', 'การใช้งานอินเทอร์เน็ตอย่างปลอดภัย', 'รู้เท่าทันสื่อและข่าวปลอม (Fake News)', 'วิทยาการข้อมูล (Data Science) และ AI เบื้องต้น'] },
+            { id: 'ict', areaId: 'area_sci', name: 'คอมพิวเตอร์ (ICT)', icon: '🖥️', topics: ['ส่วนประกอบของคอมพิวเตอร์และอุปกรณ์รับ-แสดงผล', 'การใช้งานเมาส์ คีย์บอร์ด และระบบปฏิบัติการ', 'โปรแกรมประมวลผลคำ (Word Processing)', 'โปรแกรมนำเสนอข้อมูล (Presentation)', 'โปรแกรมตารางทำงาน (Spreadsheet)', 'การออกแบบกราฟิกและการตกแต่งภาพ', 'เครือข่ายคอมพิวเตอร์และการสื่อสารข้อมูล', 'จริยธรรมและลิขสิทธิ์ทางดิจิทัล', 'เทคโนโลยีสารสนเทศสมัยใหม่และคลาวด์'] },
+            { id: 'physics', areaId: 'area_sci', name: 'ฟิสิกส์', icon: '⚛️', topics: ['ปริมาณทางฟิสิกส์ หน่วย SI และการวัด', 'การเคลื่อนที่แนวตรง (ความเร็ว ความเร่ง)', 'แรงและกฎการเคลื่อนที่ของนิวตัน', 'งาน พลังงาน และกฎการอนุรักษ์พลังงาน', 'โมเมนตัมและการชน', 'คลื่นกล เสียง และแสง', 'ไฟฟ้าสถิตและไฟฟ้ากระแสตรง', 'แม่เหล็กไฟฟ้าและคลื่นแม่เหล็กไฟฟ้า', 'ฟิสิกส์อะตอมและฟิสิกส์นิวเคลียร์'] },
+            { id: 'chemistry', areaId: 'area_sci', name: 'เคมี', icon: '🧪', topics: ['ความปลอดภัยและทักษะในปฏิบัติการเคมี', 'อะตอมและสมบัติของธาตุตามตารางธาตุ', 'พันธะเคมี (ไอออนิก โคเวเลนต์ โลหะ)', 'โมลและสูตรเคมี', 'สารละลายและความเข้มข้นของสารละลาย', 'ปริมาณสัมพันธ์ในปฏิกิริยาเคมี', 'อัตราการเกิดปฏิกิริยาเคมีและสมดุลเคมี', 'กรด-เบส และไฟฟ้าเคมี', 'เคมีอินทรีย์และพอลิเมอร์'] },
+            { id: 'biology', areaId: 'area_sci', name: 'ชีววิทยา', icon: '🧬', topics: ['กล้องจุลทรรศน์และโครงสร้างของเซลล์', 'การลำเลียงสารเข้าและออกจากเซลล์', 'การแบ่งเซลล์แบบไมโทซิสและไมโอซิส', 'ระบบย่อยอาหาร ระบบหมุนเวียนเลือด และระบบหายใจ', 'ระบบประสาทและอวัยวะรับความรู้สึก', 'การสังเคราะห์ด้วยแสงของพืช', 'พันธุศาสตร์และกฎของเมนเดล', 'ดีเอ็นเอ (DNA) ยีน และเทคโนโลยีทางดีเอ็นเอ', 'วิวัฒนาการและความหลากหลายทางชีวภาพ'] },
+            { id: 'social', areaId: 'area_social', name: 'สังคมศึกษาฯ', icon: '🌍', topics: ['ครอบครัวและโรงเรียนของเรา', 'วันสำคัญทางพระพุทธศาสนาและศาสนาต่าง ๆ', 'มารยาทไทยและการอยู่ร่วมกันในสังคม', 'สิทธิ หน้าที่ และพลเมืองดีตามวิถีประชาธิปไตย', 'เศรษฐกิจพอเพียงและการออมเงิน', 'สินค้าและบริการในชีวิตประจำวัน', 'ภูมิศาสตร์ประเทศไทยและเครื่องมือทางภูมิศาสตร์', 'ทรัพยากรธรรมชาติและสิ่งแวดล้อมในท้องถิ่น', 'กฎหมายเบื้องต้นในชีวิตประจำวัน'] },
+            { id: 'history', areaId: 'area_social', name: 'ประวัติศาสตร์', icon: '🏛️', topics: ['ช่วงเวลา วัน เดือน ปี และปฏิทิน', 'ประวัติความเป็นมาของตนเองและครอบครัว', 'วิธีการทางประวัติศาสตร์และหลักฐานทางประวัติศาสตร์', 'อาณาจักรสุโขทัยและภูมิปัญญาไทย', 'อาณาจักรอยุธยาและธนบุรี', 'ประวัติศาสตร์สมัยรัตนโกสินทร์', 'บุคคลสำคัญของชาติไทย', 'มรดกทางวัฒนธรรมและโบราณสถานไทย', 'ประวัติศาสตร์ภูมิภาคเอเชียตะวันออกเฉียงใต้และสากล'] },
+            { id: 'anticorrupt', areaId: 'area_social', name: 'ป้องกันการทุจริต', icon: '⚖️', topics: ['การคิดแยกแยะระหว่างผลประโยชน์ส่วนตนและส่วนรวม', 'ความละอายและความไม่ทนต่อการทุจริต', 'STRONG : จิตพอเพียงต้านทุจริต', 'ความซื่อสัตย์สุจริตในชีวิตประจำวัน', 'การเคารพกฎกติกาและระเบียบวินัยในโรงเรียน', 'การใช้ทรัพย์สินส่วนรวมอย่างรู้คุณค่า', 'ความโปร่งใสและการตรวจสอบได้ในชุมชน', 'ผลกระทบของการทุจริตต่อการพัฒนาประเทศ', 'พลเมืองดีกับการป้องกันและปราบปรามการทุจริต'] },
+            { id: 'health', areaId: 'area_health', name: 'สุขศึกษาฯ', icon: '💪', topics: ['การดูแลรักษาความสะอาดร่างกายและฟัน', 'อาหารหลัก 5 หมู่และโภชนาการที่เหมาะสม', 'การเจริญเติบโตและพัฒนาการตามวัย', 'ความปลอดภัยในบ้าน โรงเรียน และอุบัติเหตุ', 'การเคลื่อนไหวร่างกายและการออกกำลังกาย', 'การปฐมพยาบาลเบื้องต้น', 'การป้องกันโรคติดต่อและสุขอนามัยส่วนบุคคล', 'ทักษะการปฏิเสธสารเสพติดและสิ่งมอมเมา', 'สุขภาพจิตและการจัดการความเครียด'] },
+            { id: 'art', areaId: 'area_art', name: 'ทัศนศิลป์', icon: '🎨', topics: ['เส้น รูปร่าง และรูปทรงพื้นฐาน', 'แม่สีและการผสมสีขั้นที่ 1-3', 'สีโทนร้อนและสีโทนเย็น', 'ทัศนธาตุและหลักการจัดองค์ประกอบศิลป์', 'งานปั้นและงานประติมากรรมสร้างสรรค์', 'งานพิมพ์ภาพและงานตัดปะคอลลาจ', 'แสง เงา และน้ำหนักอ่อน-แก่', 'จิตรกรรมไทยและลวดลายไทยเบื้องต้น', 'การวิจารณ์งานศิลปะและการออกแบบสื่อ'] },
+            { id: 'music', areaId: 'area_art', name: 'ดนตรี', icon: '🎵', topics: ['เสียงในธรรมชาติและเสียงดนตรี', 'จังหวะและทำนองดนตรีเบื้องต้น', 'เครื่องดนตรีไทย 4 ประเภท (ดีด สี ตี เป่า)', 'เครื่องดนตรีสากลและวงดนตรีประเภทต่าง ๆ', 'สัญลักษณ์ทางดนตรีและตัวโน้ตสากล', 'การขับร้องเพลงไทยและเพลงสากล', 'เพลงพื้นบ้าน 4 ภาคของไทย', 'บทบาทของดนตรีในพิธีกรรมและวัฒนธรรม', 'การประพันธ์ทำนองและวิเคราะห์บทเพลง'] },
+            { id: 'dance', areaId: 'area_art', name: 'นาฏศิลป์', icon: '💃', topics: ['การเคลื่อนไหวร่างกายเลียนแบบธรรมชาติ', 'นาฏยศัพท์พื้นฐาน (จีบ ตั้งวง)', 'ภาษาท่าทางนาฏศิลป์ไทย', 'รำวงมาตรฐานและระบำเบ็ดเตล็ด', 'นาฏศิลป์พื้นบ้าน 4 ภาค', 'การแสดงโขนและละครไทย', 'องค์ประกอบของการแสดงนาฏศิลป์', 'มารยาทในการชมการแสดงนาฏศิลป์', 'การออกแบบท่ารำและนาฏศิลป์สร้างสรรค์'] },
+            { id: 'career', areaId: 'area_career', name: 'การงานอาชีพ', icon: '🛠️', topics: ['การแต่งกายและการจัดเก็บของใช้ส่วนตัว', 'การทำความสะอาดบ้านและห้องเรียน', 'การปลูกผักสวนครัวและดูแลต้นไม้', 'งานประดิษฐ์จากวัสดุเหลือใช้ในท้องถิ่น', 'การประกอบอาหารและจัดโต๊ะอาหาร', 'การซ่อมแซมเสื้อผ้าและของใช้เบื้องต้น', 'อาชีพสุจริตในชุมชนและท้องถิ่น', 'การวางแผนการทำงานและทักษะการจัดการ', 'การประกอบธุรกิจขนาดย่อมและการตลาดออนไลน์'] },
+            { id: 'english', areaId: 'area_lang', name: 'ภาษาอังกฤษ', icon: '🔤', topics: ['English Alphabets A-Z & Phonics', 'Numbers, Colors & Shapes Vocabulary', 'My Family, Body Parts & Feelings', 'Daily Routines & Telling Time', 'Animals, Fruits & Healthy Food', 'Occupations, Places & Vehicles', 'Reading Comprehension: หาใจความสำคัญ', 'English Tenses (Present, Past, Future)', 'Conditional Sentences (If-Clauses Types 0, 1, 2, 3)', 'Passive Voice & Reported Speech', 'Modal Verbs, Gerunds & Infinitives', 'Functional English & Everyday Conversations'] },
+            { id: 'chinese', areaId: 'area_lang', name: 'ภาษาจีน', icon: '🀄', topics: ['สัทอักษรพินอิน (Pinyin) พยัญชนะและสระ', 'ตัวเลขภาษาจีน 1-100 (数字)', 'คำทักทายและแนะนำตัวภาษาจีน (你好)', 'สมาชิกในครอบครัว (家庭成员)', 'สีและผลไม้แสนอร่อย (颜色与水果)', 'สัตว์น่ารักรอบตัว (可爱的动物)', 'วัน เดือน ปี และเวลาภาษาจีน', 'อาหารและเครื่องดื่ม (食物与饮料)', 'บทสนทนาในชีวิตประจำวันและวัฒนธรรมจีน'] },
+            { id: 'is', areaId: 'area_activity', name: 'ค้นคว้าอิสระ (IS)', icon: '🔎', topics: ['การตั้งประเด็นคำถามและสมมติฐานการค้นคว้า', 'การสืบค้นข้อมูลจากแหล่งเรียนรู้ที่หลากหลาย', 'การคัดกรองและประเมินความน่าเชื่อถือของข้อมูล', 'การออกแบบเครื่องมือเก็บรวบรวมข้อมูลและแบบสอบถาม', 'การวิเคราะห์และสังเคราะห์องค์ความรู้', 'การเขียนรายงานโครงงานและเอกสารอ้างอิง', 'การออกแบบสื่อนำเสนอผลงานวิชาการ', 'การสื่อสารและนำเสนอผลงานสู่สาธารณะ', 'การนำองค์ความรู้ไปประยุกต์ใช้บริการสังคม'] },
+            { id: 'special_days', areaId: 'area_activity', name: 'วันสำคัญ', icon: '🗓️', badge: 'NEW', topics: ['วันขึ้นปีใหม่และวันเด็กแห่งชาติ', 'วันครูแห่งชาติและพิธีไหว้ครู', 'วันมาฆบูชา วันวิสาขบูชา และวันเข้าพรรษา', 'วันสงกรานต์และประเพณีปีใหม่ไทย', 'วันสุนทรภู่และวันภาษาไทยแห่งชาติ', 'วันเฉลิมพระชนมพรรษาและวันแม่แห่งชาติ', 'วันลอยกระทงและอนุรักษ์สายน้ำ', 'วันพ่อแห่งชาติและวันรัฐธรรมนูญ', 'วันคริสต์มาส (Christmas) และเทศกาลนานาชาติ'] }
+        ];
+
+        // =====================================================================
+        // 4. ตัวแปรสถานะและฐานข้อมูล (State & Database)
+        // =====================================================================
+        let ALL_PROMPTS = [];
+        let FILTERED_PROMPTS = [];
+        let CUSTOM_TOPIC_ITEM = null;
+        let displayedCount = 12;
+        const PAGE_SIZE = 12;
+        let currentModalPromptText = '';
+
+        let state = {
+            printMode: 'bw_clean',
+            studioMode: 'media',
+            selectedGrade: 'ทุกระดับชั้น',
+            selectedArea: 'all',
+            selectedSubject: 'all',
+            selectedActivityFilter: 'all',
+            searchQuery: '',
+            extraLesson: '',
+            selectedScenario: 'none',
+            customScenarioText: '',
+            selectedSocialScope: 'none',
+            isContextBarOpen: true
+        };
+
+        function buildPromptDatabase() {
+            const list = [];
+            const activeGrades = GRADES.filter(g => g !== 'ทุกระดับชั้น');
+            const presets = [
+                ['matching', 'fill_blanks', 'multiple_choice'],
+                ['multiple_choice', 'short_answer', 'code_breaking', 'matching', 'fill_blanks', 'word_search'],
+                ['true_false', 'categorizing', 'labeled_diagram'],
+                ['sequencing', 'story_writing', 'cut_paste'],
+                ['mind_map', 'fill_blanks', 'short_answer']
+            ];
+
+            let idNum = 1;
+            SUBJECTS.forEach((subj, sIdx) => {
+                activeGrades.forEach((grade) => {
+                    subj.topics.forEach((topic, tIdx) => {
+                        list.push({
+                            id: `PC-${idNum}`,
+                            areaId: subj.areaId,
+                            subjectId: subj.id,
+                            subjectName: subj.name,
+                            subjectIcon: subj.icon,
+                            grade: grade,
+                            topic: topic,
+                            pageCount: 1,
+                            wsActivities: [...presets[(idNum + sIdx + tIdx) % presets.length]],
+                            wsQuestionCount: 10,
+                            wsStyleIdx: 5,
+                            wsIncludeAnswerKey: false,
+                            wsThemeFrameCut: false,
+                            mdStyleIdx: 0,
+                            mdSizeIdx: 4,
+                            mdFormatIdx: 0,
+                            mdCharIdx: subj.id === 'english' ? 0 : (subj.id === 'chinese' ? 3 : ((idNum + sIdx) % MEDIA_CHARACTERS.length))
+                        });
+                        idNum++;
+                    });
+                });
+            });
+            ALL_PROMPTS = list;
+            document.getElementById('totalStatCount').textContent = '8,000++';
+        }
+
+        // =====================================================================
+        // 5. ตัวกรอง 3 คอลัมน์สัมพันธ์กัน + Studio Context Bar + สร้าง Prompt อัจฉริยะ
+        // =====================================================================
+        function populateFilterDropdowns() {
+            const gradeSel = document.getElementById('gradeDropdown');
+            gradeSel.innerHTML = GRADES.map(g =>
+                `<option value="${g}">${g === 'ทุกระดับชั้น' ? 'ทุกระดับชั้น (อนุบาล – ม.6)' : (g === 'อนุบาล' ? 'ระดับปฐมวัย (อนุบาล)' : 'ชั้น ' + g)}</option>`
+            ).join('');
+
+            const areaSel = document.getElementById('learningAreaDropdown');
+            areaSel.innerHTML = LEARNING_AREAS.map(a => `<option value="${a.id}">${a.name}</option>`).join('');
+
+            updateSubjectDropdownOptions();
+            updateActivityDropdownOptions();
+            populateContextBarDropdowns();
+        }
+
+        function populateContextBarDropdowns() {
+            const scenSel = document.getElementById('scenarioDropdown');
+            scenSel.innerHTML = `
+                <option value="none">เลือกสถานการณ์</option>
+                <option value="custom">✍️ กำหนดสถานการณ์สั้นๆ เอง</option>
+                ${SCENARIO_THEMES.map(s => `<option value="${s.id}">${s.name}</option>`).join('')}
+            `;
+
+            const scopeSel = document.getElementById('socialScopeDropdown');
+            scopeSel.innerHTML = `
+                <option value="none">เลือกบริบท</option>
+                ${SOCIAL_SCOPES.map(sc => `<option value="${sc.id}">${sc.name}</option>`).join('')}
+            `;
+        }
+
+        function updateSubjectDropdownOptions() {
+            const areaObj = LEARNING_AREAS.find(a => a.id === state.selectedArea) || LEARNING_AREAS[0];
+            const availableSubjects = SUBJECTS.filter(s => areaObj.subjectIds.includes(s.id));
+            const subjSel = document.getElementById('subjectDropdown');
+
+            let optionsHtml = availableSubjects.length > 1
+                ? `<option value="all">ทุกรายวิชาในหมวดนี้ (${availableSubjects.length} วิชา)</option>`
+                : '';
+            optionsHtml += availableSubjects.map(s =>
+                `<option value="${s.id}">${s.icon} ${s.name}${s.badge ? ' [NEW]' : ''}</option>`
+            ).join('');
+
+            subjSel.innerHTML = optionsHtml;
+            if (availableSubjects.length === 1) {
+                state.selectedSubject = availableSubjects[0].id;
+                subjSel.value = state.selectedSubject;
+            } else if (!availableSubjects.some(s => s.id === state.selectedSubject)) {
+                state.selectedSubject = 'all';
+                subjSel.value = 'all';
+            } else {
+                subjSel.value = state.selectedSubject;
+            }
+        }
+
+        function updateActivityDropdownOptions() {
+            const dd = document.getElementById('activityFilterDropdown');
+            if (state.studioMode === 'worksheet') {
+                dd.innerHTML = `<option value="all">⚡ เลือกผสมกิจกรรมด่วน (23 รูปแบบ)</option>` +
+                    WORKSHEET_ACTIVITIES.map(a => `<option value="${a.id}">+ เพิ่ม "${a.name}" ให้ทุกการ์ด</option>`).join('');
+            } else {
+                dd.innerHTML = `<option value="all">🎨 เลือกรูปแบบสื่อ (เปลี่ยนทุกการ์ดทันที · 30 แบบ)</option>` +
+                    MEDIA_FORMATS.map((f, idx) => `<option value="${idx}">${idx + 1}. ${f}</option>`).join('');
+            }
+            dd.value = 'all';
+        }
+
+        function handleCascadingFilterChange(changedLevel) {
+            if (changedLevel === 'grade') {
+                state.selectedGrade = document.getElementById('gradeDropdown').value;
+            } else if (changedLevel === 'area') {
+                state.selectedArea = document.getElementById('learningAreaDropdown').value;
+                state.selectedSubject = 'all';
+                updateSubjectDropdownOptions();
+            } else if (changedLevel === 'subject') {
+                state.selectedSubject = document.getElementById('subjectDropdown').value;
+            }
+            applyFilters();
+        }
+
+        function handleFilterChange() {
+            state.searchQuery = document.getElementById('searchInput').value.trim();
+            applyFilters();
+        }
+
+        function handleActivityDropdownChange() {
+            const val = document.getElementById('activityFilterDropdown').value;
+            if (val === 'all') return;
+
+            if (state.studioMode === 'media') {
+                const fmtIdx = parseInt(val, 10);
+                ALL_PROMPTS.forEach(item => { item.mdFormatIdx = fmtIdx; });
+                if (CUSTOM_TOPIC_ITEM) CUSTOM_TOPIC_ITEM.mdFormatIdx = fmtIdx;
+                showToast('เปลี่ยนรูปแบบสื่อทุกการ์ดแล้ว!', `ปรับเป็น "${MEDIA_FORMATS[fmtIdx]}" เรียบร้อย`);
+            } else {
+                ALL_PROMPTS.forEach(item => {
+                    if (!item.wsActivities.includes(val)) {
+                        if (item.wsActivities.length >= 6) item.wsActivities.shift();
+                        item.wsActivities.push(val);
+                    }
+                });
+                if (CUSTOM_TOPIC_ITEM && !CUSTOM_TOPIC_ITEM.wsActivities.includes(val)) {
+                    if (CUSTOM_TOPIC_ITEM.wsActivities.length >= 6) CUSTOM_TOPIC_ITEM.wsActivities.shift();
+                    CUSTOM_TOPIC_ITEM.wsActivities.push(val);
+                }
+                const actObj = WORKSHEET_ACTIVITIES.find(a => a.id === val);
+                showToast('เพิ่มกิจกรรมลงในใบงานแล้ว!', `เพิ่ม "${actObj ? actObj.name : val}" ให้ทุกการ์ดเรียบร้อย`);
+            }
+            renderCards();
+        }
+
+        function toggleStudioContextBar() {
+            state.isContextBarOpen = !state.isContextBarOpen;
+            const body = document.getElementById('studioContextBody');
+            const label = document.getElementById('toggleContextLabel');
+            const icon = document.getElementById('toggleContextIcon');
+            if (state.isContextBarOpen) {
+                body.classList.remove('hidden');
+                label.textContent = 'พับเก็บ';
+                icon.textContent = '▴';
+            } else {
+                body.classList.add('hidden');
+                label.textContent = 'เปิดเครื่องมือ';
+                icon.textContent = '▾';
+            }
+        }
+
+        function clearExtraLesson() {
+            document.getElementById('extraLessonInput').value = '';
+            state.extraLesson = '';
+            updateContextBadge();
+            renderCards();
+        }
+
+        function handleScenarioDropdownChange() {
+            const val = document.getElementById('scenarioDropdown').value;
+            state.selectedScenario = val;
+            const customBox = document.getElementById('customScenarioBox');
+            if (val === 'custom') {
+                customBox.classList.remove('hidden');
+                setTimeout(() => document.getElementById('customScenarioInput').focus(), 50);
+            } else {
+                customBox.classList.add('hidden');
+            }
+            updateContextBadge();
+            renderCards();
+        }
+
+        function randomizeSmartScenario() {
+            let pool = SCENARIO_THEMES;
+            if (state.selectedSubject !== 'all') {
+                const matched = SCENARIO_THEMES.filter(s => s.subjects.includes(state.selectedSubject));
+                if (matched.length > 0) pool = matched;
+            } else if (state.selectedArea !== 'all') {
+                const areaObj = LEARNING_AREAS.find(a => a.id === state.selectedArea);
+                if (areaObj) {
+                    const matched = SCENARIO_THEMES.filter(s => s.subjects.some(sub => areaObj.subjectIds.includes(sub)));
+                    if (matched.length > 0) pool = matched;
+                }
+            }
+            const currentId = state.selectedScenario;
+            const candidates = pool.length > 1 ? pool.filter(s => s.id !== currentId) : pool;
+            const picked = candidates[Math.floor(Math.random() * candidates.length)];
+
+            state.selectedScenario = picked.id;
+            document.getElementById('scenarioDropdown').value = picked.id;
+            document.getElementById('customScenarioBox').classList.add('hidden');
+            updateContextBadge();
+            renderCards();
+            showToast('สุ่มธีมสถานการณ์ให้สอดคล้องกับวิชาแล้ว!', picked.name);
+        }
+
+        function handleContextBarChange() {
+            state.extraLesson = document.getElementById('extraLessonInput').value.trim();
+            state.customScenarioText = document.getElementById('customScenarioInput').value.trim();
+            state.selectedSocialScope = document.getElementById('socialScopeDropdown').value;
+            updateContextBadge();
+            renderCards();
+        }
+
+        function updateContextBadge() {
+            const hasExtra = state.extraLesson.length > 0;
+            const hasScenario = state.selectedScenario !== 'none' && (state.selectedScenario !== 'custom' || state.customScenarioText.length > 0);
+            const hasScope = state.selectedSocialScope !== 'none';
+            const badge = document.getElementById('contextActiveBadge');
+            if (hasExtra || hasScenario || hasScope) {
+                badge.classList.remove('hidden');
+            } else {
+                badge.classList.add('hidden');
+            }
+        }
+
+        function resetAllFilters() {
+            state.selectedGrade = 'ทุกระดับชั้น';
+            state.selectedArea = 'all';
+            state.selectedSubject = 'all';
+            state.searchQuery = '';
+            document.getElementById('gradeDropdown').value = 'ทุกระดับชั้น';
+            document.getElementById('learningAreaDropdown').value = 'all';
+            document.getElementById('searchInput').value = '';
+            updateSubjectDropdownOptions();
+            updateActivityDropdownOptions();
+            applyFilters();
+        }
+
+        function setGlobalPrintMode(mode) {
+            state.printMode = mode;
+            document.querySelectorAll('.print-mode-btn').forEach(btn => {
+                btn.className = 'print-mode-btn py-3 px-3.5 rounded-xl text-left transition-all bg-white text-slate-700 hover:bg-teal-50/60 border-2 border-transparent hover:border-teal-200';
+                const sub = btn.querySelector('div:nth-child(2)');
+                if (sub) { sub.classList.remove('text-white'); sub.classList.add('text-slate-500'); }
+            });
+            const active = document.getElementById(`printBtn-${mode}`);
+            if (active) {
+                active.className = 'print-mode-btn py-3 px-3.5 rounded-xl text-left transition-all bg-[#0D8A8A] text-white shadow-md shadow-teal-200/80 border-2 border-[#0D8A8A]';
+                const sub = active.querySelector('div:nth-child(2)');
+                if (sub) { sub.classList.remove('text-slate-500'); sub.classList.add('text-white'); }
+            }
+            renderCards();
+        }
+
+        function setPrimaryStudioMode(mode) {
+            state.studioMode = mode;
+            const mediaBtn = document.getElementById('studioBtn-media');
+            const wsBtn = document.getElementById('studioBtn-worksheet');
+            const headerLabel = document.getElementById('headerModeLabel');
+
+            if (mode === 'media') {
+                mediaBtn.className = 'py-3 px-3.5 rounded-xl text-left transition-all bg-gradient-to-r from-[#0D8A8A] to-teal-600 text-white shadow-md shadow-teal-200/80 border-2 border-[#0D8A8A]';
+                mediaBtn.querySelector('div:nth-child(2)').className = 'text-[11px] opacity-95 font-body mt-0.5 text-white';
+                wsBtn.className = 'py-3 px-3.5 rounded-xl text-left transition-all bg-white text-slate-700 hover:bg-orange-50 border-2 border-transparent hover:border-orange-200';
+                wsBtn.querySelector('div:nth-child(2)').className = 'text-[11px] text-slate-500 font-body mt-0.5';
+                headerLabel.textContent = 'สื่อการสอน';
+            } else {
+                wsBtn.className = 'py-3 px-3.5 rounded-xl text-left transition-all bg-gradient-to-r from-[#F26444] to-orange-500 text-white shadow-md shadow-orange-200/80 border-2 border-[#F26444]';
+                wsBtn.querySelector('div:nth-child(2)').className = 'text-[11px] opacity-95 font-body mt-0.5 text-white';
+                mediaBtn.className = 'py-3 px-3.5 rounded-xl text-left transition-all bg-white text-slate-700 hover:bg-teal-50 border-2 border-transparent hover:border-teal-200';
+                mediaBtn.querySelector('div:nth-child(2)').className = 'text-[11px] text-slate-500 font-body mt-0.5';
+                headerLabel.textContent = 'ใบงาน';
+            }
+            updateActivityDropdownOptions();
+            renderCards();
+        }
+
+        function applyFilters() {
+            const areaObj = LEARNING_AREAS.find(a => a.id === state.selectedArea) || LEARNING_AREAS[0];
+            const q = state.searchQuery.toLowerCase();
+
+            FILTERED_PROMPTS = ALL_PROMPTS.filter(item => {
+                if (state.selectedGrade !== 'ทุกระดับชั้น' && item.grade !== state.selectedGrade) return false;
+                if (state.selectedArea !== 'all' && !areaObj.subjectIds.includes(item.subjectId)) return false;
+                if (state.selectedSubject !== 'all' && item.subjectId !== state.selectedSubject) return false;
+                if (q) {
+                    const hay = `${item.topic} ${item.subjectName} ${item.grade}`.toLowerCase();
+                    if (!hay.includes(q)) return false;
+                }
+                return true;
+            });
+
+            // ระบบสร้างการ์ดหัวข้อใหม่ทันใจ (Custom Topic Instant Card) เมื่อพิมพ์ค้นหาเรื่องใหม่
+            CUSTOM_TOPIC_ITEM = null;
+            if (state.searchQuery.length > 0) {
+                const exactExists = FILTERED_PROMPTS.some(p => p.topic.toLowerCase() === q);
+                if (!exactExists) {
+                    const targetSubj = state.selectedSubject !== 'all'
+                        ? (SUBJECTS.find(s => s.id === state.selectedSubject) || SUBJECTS[0])
+                        : (state.selectedArea !== 'all'
+                            ? (SUBJECTS.find(s => areaObj.subjectIds.includes(s.id)) || SUBJECTS[0])
+                            : SUBJECTS[0]);
+                    const targetGrade = state.selectedGrade !== 'ทุกระดับชั้น' ? state.selectedGrade : 'ป.4';
+
+                    CUSTOM_TOPIC_ITEM = {
+                        id: 'PC-CUSTOM',
+                        isCustom: true,
+                        areaId: targetSubj.areaId,
+                        subjectId: targetSubj.id,
+                        subjectName: targetSubj.name,
+                        subjectIcon: targetSubj.icon,
+                        grade: targetGrade,
+                        topic: state.searchQuery,
+                        pageCount: 1,
+                        wsActivities: ['matching', 'fill_blanks', 'multiple_choice'],
+                        wsQuestionCount: 10,
+                        wsStyleIdx: 5,
+                        wsIncludeAnswerKey: false,
+                        wsThemeFrameCut: false,
+                        mdStyleIdx: 0,
+                        mdSizeIdx: 4,
+                        mdFormatIdx: 0,
+                        mdCharIdx: targetSubj.id === 'english' ? 0 : 4
+                    };
+                }
+            }
+
+            displayedCount = PAGE_SIZE;
+            const totalFound = FILTERED_PROMPTS.length + (CUSTOM_TOPIC_ITEM ? 1 : 0);
+            document.getElementById('filteredCountText').textContent = totalFound.toLocaleString();
+
+            const gradeLabel = state.selectedGrade === 'ทุกระดับชั้น' ? 'ทุกระดับชั้น' : state.selectedGrade;
+            const areaLabel = state.selectedArea === 'all' ? 'ทุกกลุ่มสาระ' : areaObj.name.replace(/^\d+\.\s*/, '');
+            const subjObj = SUBJECTS.find(s => s.id === state.selectedSubject);
+            const subjLabel = state.selectedSubject === 'all' ? 'ทุกรายวิชา' : subjObj.name;
+            document.getElementById('activeFilterSummary').textContent = `${gradeLabel} · ${areaLabel} · ${subjLabel}`;
+
+            renderCards();
+        }
+
+        function loadMoreCards() {
+            displayedCount += PAGE_SIZE;
+            renderCards();
+        }
+
+        function getCardById(id) {
+            if (id === 'PC-CUSTOM' && CUSTOM_TOPIC_ITEM) return CUSTOM_TOPIC_ITEM;
+            return ALL_PROMPTS.find(p => p.id === id);
+        }
+
+        // =====================================================================
+        // 6. ฟังก์ชันประกอบสูตร Prompt (รวมข้อมูลครู + สถานการณ์ + บริบทวงสังคม + ราชบัณฑิตฯ)
+        // =====================================================================
+        function buildContextDirectivesBlock() {
+            const blocks = [];
+
+            if (state.extraLesson.length > 0) {
+                blocks.push(`[เนื้อหาบทเรียนและข้อมูลเฉพาะที่ครูผู้สอนกำหนด (บังคับใช้เป็นข้อมูลหลัก)]\n${state.extraLesson}\nคำสั่งกำกับ: ให้นำเนื้อหา คำศัพท์ หรือข้อมูลข้างต้นมาใช้เป็นแกนหลักในการสร้างเนื้อหาและโจทย์อย่างครบถ้วนถูกต้อง`);
+            }
+
+            let scenarioDetail = '';
+            let scenarioLabel = '';
+            if (state.selectedScenario === 'custom' && state.customScenarioText.length > 0) {
+                scenarioLabel = 'สถานการณ์เฉพาะที่ครูผู้สอนกำหนด';
+                scenarioDetail = state.customScenarioText;
+            } else if (state.selectedScenario !== 'none' && state.selectedScenario !== 'custom') {
+                const scObj = SCENARIO_THEMES.find(s => s.id === state.selectedScenario);
+                if (scObj) {
+                    scenarioLabel = scObj.name;
+                    scenarioDetail = scObj.detail;
+                }
+            }
+
+            const scopeObj = state.selectedSocialScope !== 'none'
+                ? SOCIAL_SCOPES.find(sc => sc.id === state.selectedSocialScope)
+                : null;
+
+            if (scenarioDetail || scopeObj) {
+                let scText = `[สถานการณ์จำลองและบริบทวงสังคม (Scenario & Social Context)]\n`;
+                if (scenarioDetail) {
+                    scText += `- ธีมสถานการณ์ที่อยู่ในความสนใจ (${scenarioLabel}): ${scenarioDetail}\n`;
+                }
+                if (scopeObj) {
+                    scText += `- ขอบเขตบริบทวงสังคม (${scopeObj.name}): ${scopeObj.detail}\n`;
+                }
+                scText += `- กฎการออกแบบสถานการณ์: ผูกเนื้อหาบทเรียนเข้ากับสถานการณ์และบริบทวงสังคมข้างต้นอย่างเป็นธรรมชาติ สรุปคำบรรยายสถานการณ์ให้กระชับชัดเจน (2–3 บรรทัด ไม่เกิน 35 คำ เพื่อไม่ให้ตัวหนังสือล้นหน้ากระดาษ) พร้อมภาพประกอบเหตุการณ์ที่สอดคล้องกับช่วงวัยของผู้เรียน`;
+                blocks.push(scText);
+            }
+
+            return blocks.length > 0 ? `\n\n${blocks.join('\n\n')}` : '';
+        }
+
+        function buildPageLayoutInstruction(pageCount, mode) {
+            const count = parseInt(pageCount, 10) || 1;
+            if (count <= 1) {
+                return 'จำนวนหน้า: 1 หน้า (Single Page A4) จัดองค์ประกอบทั้งหมดให้สมดุล ครบถ้วน และจบในหน้าเดียวอย่างสวยงาม';
+            }
+            if (mode === 'media') {
+                return `จำนวนหน้า: ${count} หน้าต่อเนื่อง (Multi-Page Educational Set: Page 1 ถึง Page ${count})
+- แบ่งเนื้อหาเรื่องนี้เป็นชุดสื่อการสอน ${count} หน้าต่อเนื่องกันอย่างเป็นระบบ (ระบุโครงสร้างชัดเจนทีละหน้า: Page 1, Page 2, ..., Page ${count})
+- หน้าแรกเป็นหน้าปก/ปูพื้นฐานสำคัญ และหน้าถัดไปเจาะลึกหัวข้อย่อยทีละประเด็นจนครบจบในหน้าสุดท้าย พร้อมใส่เลขหน้า (Page 1/${count}) และคุมสไตล์ภาพให้เป็นชุดเดียวกันทั้ง ${count} หน้า`;
+            }
+            return `จำนวนหน้า: ${count} หน้าต่อเนื่อง (Multi-Page Worksheet Set: Page 1 ถึง Page ${count})
+- ออกแบบเป็นชุดใบงานต่อเนื่องจำนวน ${count} หน้า (ระบุโครงสร้างและแบ่งโจทย์ชัดเจนทีละหน้า: Page 1, Page 2, ..., Page ${count})
+- ไล่ระดับความยากง่ายจากพื้นฐานไปสู่การประยุกต์ใช้อย่างเป็นลำดับ มีหัวกระดาษและเลขหน้ากำกับทุกหน้า (Page 1/${count}) และคุมสไตล์ภาพให้กลมกลืนทั้งชุด`;
+        }
+
+        function generatePromptForItem(item) {
+            const printInfo = PRINT_MODES[state.printMode];
+            const thaiRuleBlock = item.subjectId === 'thai' ? `\n\n${THAI_STANDARD_RULE}` : '';
+            const englishRuleBlock = item.subjectId === 'english' ? `\n\n${getEnglishGradeCEFRRule(item.grade)}` : '';
+            const contextBlock = buildContextDirectivesBlock();
+            const pageCount = parseInt(item.pageCount, 10) || 1;
+            const pageInstruction = buildPageLayoutInstruction(pageCount, state.studioMode);
+
+            if (state.studioMode === 'media') {
+                const formatName = MEDIA_FORMATS[item.mdFormatIdx] || MEDIA_FORMATS[0];
+                const layoutBlueprint = MEDIA_LAYOUT_BLUEPRINTS[item.mdFormatIdx] || MEDIA_LAYOUT_BLUEPRINTS[0];
+                const styleName = MEDIA_STYLES[item.mdStyleIdx] || MEDIA_STYLES[0];
+                const sizeName = MEDIA_SIZES[item.mdSizeIdx] || MEDIA_SIZES[4];
+                const charName = MEDIA_CHARACTERS[item.mdCharIdx] || MEDIA_CHARACTERS[0];
+
+                return `สร้างสื่อการสอนภาพประกอบการศึกษา ระดับชั้น ${item.grade} กลุ่มสาระ/วิชา ${item.subjectName} (จำนวน ${pageCount} หน้า)
+หัวข้อเรื่อง: "${item.topic}"
+
+[รูปแบบและโครงสร้างสื่อ (Dynamic Layout Blueprint)]
+- ประเภทสื่อ: ${formatName}
+- ${pageInstruction}
+- โครงสร้างการจัดวาง: ${layoutBlueprint}
+- คำสั่งประยุกต์เนื้อหา (Adaptive Visual Mapping): ออกแบบและจัดวางเนื้อหาเรื่อง "${item.topic}" ให้เข้ากับโครงสร้าง "${formatName}" อย่างเป็นธรรมชาติ อ่านง่าย เป็นลำดับขั้นตอน เหมาะสมกับผู้เรียนระดับชั้น ${item.grade}
+
+[สไตล์ภาพ ตัวละคร และขนาด]
+- สไตล์ภาพประกอบ: ${styleName}
+- ${printInfo.mediaRule}
+- ขนาดและสัดส่วนภาพ: ${sizeName}
+- ตัวละครนำเรื่อง (Mascot): ${charName} คอยชี้จุดสำคัญและสร้างบรรยากาศการเรียนรู้ที่เป็นมิตร
+
+[มาตรฐานความคมชัดและภาษา]
+- ตัวอักษรคมชัด สะกดถูกต้อง 100% เว้นระยะห่างสมดุล อ่านง่ายสบายตา ไม่ซ้อนทับภาพประกอบ${contextBlock}${englishRuleBlock}${thaiRuleBlock}`;
+            } else {
+                const selectedActs = item.wsActivities
+                    .map(id => WORKSHEET_ACTIVITIES.find(a => a.id === id))
+                    .filter(Boolean);
+                const actsToUse = selectedActs.length > 0 ? selectedActs : [WORKSHEET_ACTIVITIES[0]];
+                const actNames = actsToUse.map(a => a.name).join(' + ');
+                const actInstructions = actsToUse.map((a, i) => `ส่วนที่ ${i + 1} (${a.name}): ${a.instruction}`).join('\n');
+                const wsStyleName = WORKSHEET_STYLES[item.wsStyleIdx] || WORKSHEET_STYLES[0];
+                const studentHeaderLine = item.subjectId === 'english'
+                    ? '- มีช่องกรอกข้อมูลนักเรียนเป็นภาษาอังกฤษ: Name ........................................ Class ............ No. ........'
+                    : '- มีช่องกรอกข้อมูลนักเรียน: ชื่อ-นามสกุล .............................. ชั้น ............ เลขที่ ........';
+
+                const answerKeyLine = item.wsIncludeAnswerKey
+                    ? '- แนบส่วน "เฉลยสำหรับครู (Teacher Answer Key)" ขนาดกะทัดรัดไว้มุมล่างหรือหน้าถัดไปอย่างชัดเจน'
+                    : '- ไม่ต้องใส่เฉลยลงในพื้นที่ทำแบบฝึกหัดของนักเรียน';
+                const frameCutLine = item.wsThemeFrameCut
+                    ? '- ตกแต่งขอบใบงานด้วยกรอบธีมน่ารักเข้ากับเรื่อง พร้อมเส้นปะรอบนอกสำหรับตัดตกแต่งสมุด (Dashed Cut-out Border)'
+                    : '- จัดขอบหน้ากระดาษ A4 แนวตั้งเรียบร้อย สะอาดตา เหลือขอบขาวสำหรับเข้าแฟ้ม';
+
+                return `สร้างใบงาน (Worksheet) ขนาด A4 แนวตั้ง ระดับชั้น ${item.grade} วิชา ${item.subjectName} (จำนวน ${pageCount} หน้า)
+หัวข้อใบงาน: "${item.topic}"
+รูปแบบใบงานผสมผสาน (${actsToUse.length} กิจกรรม · รวมประมาณ ${item.wsQuestionCount} ข้อ): ${actNames}
+
+[ส่วนหัวใบงานและจำนวนหน้า (Header & Pagination)]
+- ${pageInstruction}
+- ด้านบนสุดมีป้ายหัวข้อใบงานสวยงามเด่นชัด ระบุชื่อวิชา ${item.subjectName} ระดับชั้น ${item.grade} เรื่อง "${item.topic}"
+${studentHeaderLine}
+
+[โครงสร้างกิจกรรมภายในใบงาน]
+${actInstructions}
+
+[สไตล์ภาพประกอบและมาตรฐานการพิมพ์]
+- สไตล์ภาพประกอบ: ${wsStyleName}
+- ${printInfo.worksheetRule}
+${answerKeyLine}
+${frameCutLine}
+- ตัวอักษรชัดเจน อ่านง่าย สะกดถูกต้อง 100% ช่องว่างสำหรับเขียนคำตอบกว้างพอเหมาะสำหรับนักเรียนชั้น ${item.grade}${contextBlock}${englishRuleBlock}${thaiRuleBlock}`;
+            }
+        }
+
+        // =====================================================================
+        // 7. การเรนเดอร์การ์ดและระบบโต้ตอบบนการ์ด
+        // =====================================================================
+        function renderCards() {
+            const grid = document.getElementById('cardsGrid');
+            const emptyState = document.getElementById('emptyResultState');
+            const loadMoreBox = document.getElementById('loadMoreContainer');
+
+            const combinedList = CUSTOM_TOPIC_ITEM ? [CUSTOM_TOPIC_ITEM, ...FILTERED_PROMPTS] : FILTERED_PROMPTS;
+
+            if (combinedList.length === 0) {
+                grid.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                loadMoreBox.classList.add('hidden');
+                return;
+            }
+
+            emptyState.classList.add('hidden');
+            const slice = combinedList.slice(0, displayedCount);
+            grid.innerHTML = slice.map(item => buildCardHTML(item)).join('');
+
+            const remaining = combinedList.length - slice.length;
+            if (remaining > 0) {
+                loadMoreBox.classList.remove('hidden');
+                document.getElementById('remainingCount').textContent = remaining.toLocaleString();
+            } else {
+                loadMoreBox.classList.add('hidden');
+            }
+        }
+
+        function getActiveContextPillsHTML() {
+            const pills = [];
+            if (state.extraLesson.length > 0) {
+                pills.push(`<span class="px-2 py-0.5 rounded-md bg-orange-50 text-[#F26444] border border-orange-200 text-[10px] font-bold">📝 แนบเนื้อหาครู</span>`);
+            }
+            if (state.selectedScenario === 'custom' && state.customScenarioText.length > 0) {
+                pills.push(`<span class="px-2 py-0.5 rounded-md bg-amber-50 text-amber-700 border border-amber-200 text-[10px] font-bold">✍️ สถานการณ์กำหนดเอง</span>`);
+            } else if (state.selectedScenario !== 'none' && state.selectedScenario !== 'custom') {
+                const scObj = SCENARIO_THEMES.find(s => s.id === state.selectedScenario);
+                if (scObj) pills.push(`<span class="px-2 py-0.5 rounded-md bg-amber-50 text-amber-700 border border-amber-200 text-[10px] font-bold">${scObj.name}</span>`);
+            }
+            if (state.selectedSocialScope !== 'none') {
+                const scopeObj = SOCIAL_SCOPES.find(sc => sc.id === state.selectedSocialScope);
+                if (scopeObj) pills.push(`<span class="px-2 py-0.5 rounded-md bg-teal-50 text-[#0D8A8A] border border-teal-200 text-[10px] font-bold">${scopeObj.name}</span>`);
+            }
+            return pills.length > 0 ? `<div class="flex flex-wrap gap-1 mt-2">${pills.join('')}</div>` : '';
+        }
+
+        function buildCardHTML(item) {
+            const promptText = generatePromptForItem(item);
+            const customBadge = item.isCustom
+                ? `<span class="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-[#F26444] to-amber-500 text-white text-[11px] font-bold shadow-sm">✨ หัวข้อสร้างใหม่ตามคำค้นหา</span>`
+                : '';
+            const thaiBadge = item.subjectId === 'thai'
+                ? `<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-bold">🏛️ มาตรฐานราชบัณฑิตฯ</span>`
+                : '';
+            const engBadge = item.subjectId === 'english'
+                ? `<span class="px-2 py-0.5 rounded-full bg-sky-50 text-sky-700 border border-sky-200 text-[10px] font-bold">🇬🇧 English-Only 100% (${item.grade})</span>`
+                : '';
+            const pageBadge = (item.pageCount && item.pageCount > 1)
+                ? `<span class="px-2 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200 text-[10px] font-bold">📄 ${item.pageCount} หน้า</span>`
+                : '';
+            const contextPills = getActiveContextPillsHTML();
+
+            if (state.studioMode === 'media') {
+                return `
+                <article class="bg-white rounded-3xl p-5 sm:p-6 shadow-md shadow-teal-100/40 border-2 ${item.isCustom ? 'border-[#F26444]' : 'border-slate-200/90'} hover:border-[#0D8A8A]/70 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2.5">
+                            <div class="flex flex-wrap items-center gap-1.5">
+                                <span class="px-2.5 py-1 rounded-xl bg-teal-50 text-[#0D8A8A] border border-teal-200 text-xs font-bold">${item.subjectIcon} ${item.subjectName}</span>
+                                <span class="px-2.5 py-1 rounded-xl bg-orange-50 text-[#F26444] border border-orange-200 text-xs font-bold">${item.grade}</span>
+                                ${pageBadge}
+                                ${customBadge}
+                                ${thaiBadge}
+                                ${engBadge}
+                            </div>
+                            <span class="text-[11px] font-mono text-slate-400">${item.id}</span>
+                        </div>
+
+                        <h3 class="font-extrabold text-slate-800 text-base sm:text-lg leading-snug mb-1">${item.topic}</h3>
+                        ${contextPills}
+
+                        <!-- ตั้งค่าแยกอิสระรายการ์ด (โหมดสื่อการสอน) -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 my-4 bg-teal-50/40 p-3.5 rounded-2xl border border-teal-100">
+                            <div>
+                                <label class="block text-[11px] font-bold text-slate-600 mb-1">1. รูปแบบสื่อ (30 แบบ)</label>
+                                <select onchange="updateCardField('${item.id}', 'mdFormatIdx', parseInt(this.value, 10))"
+                                    class="w-full py-1.5 px-2.5 bg-white border border-teal-200 rounded-xl text-xs font-semibold text-slate-800 outline-none focus:border-[#0D8A8A]">
+                                    ${MEDIA_FORMATS.map((f, idx) => `<option value="${idx}" ${item.mdFormatIdx === idx ? 'selected' : ''}>${idx + 1}. ${f}</option>`).join('')}
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-[11px] font-bold text-slate-600 mb-1">2. สไตล์ภาพ (17 แบบ)</label>
+                                <select onchange="updateCardField('${item.id}', 'mdStyleIdx', parseInt(this.value, 10))"
+                                    class="w-full py-1.5 px-2.5 bg-white border border-teal-200 rounded-xl text-xs font-semibold text-slate-800 outline-none focus:border-[#0D8A8A]">
+                                    ${MEDIA_STYLES.map((s, idx) => `<option value="${idx}" ${item.mdStyleIdx === idx ? 'selected' : ''}>${s}</option>`).join('')}
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-[11px] font-bold text-slate-600 mb-1">3. ขนาดภาพ (8 แบบ)</label>
+                                <select onchange="updateCardField('${item.id}', 'mdSizeIdx', parseInt(this.value, 10))"
+                                    class="w-full py-1.5 px-2.5 bg-white border border-teal-200 rounded-xl text-xs font-semibold text-slate-800 outline-none focus:border-[#0D8A8A]">
+                                    ${MEDIA_SIZES.map((sz, idx) => `<option value="${idx}" ${item.mdSizeIdx === idx ? 'selected' : ''}>${sz}</option>`).join('')}
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-[11px] font-bold text-slate-600 mb-1">4. ตัวละครนำเรื่อง (19 แบบ)</label>
+                                <select onchange="updateCardField('${item.id}', 'mdCharIdx', parseInt(this.value, 10))"
+                                    class="w-full py-1.5 px-2.5 bg-white border border-teal-200 rounded-xl text-xs font-semibold text-slate-800 outline-none focus:border-[#0D8A8A]">
+                                    ${MEDIA_CHARACTERS.map((ch, idx) => `<option value="${idx}" ${item.mdCharIdx === idx ? 'selected' : ''}>${ch}</option>`).join('')}
+                                </select>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label class="block text-[11px] font-bold text-slate-600 mb-1">5. 📄 จำนวนหน้าสื่อการสอน (Page Count)</label>
+                                <select onchange="updateCardField('${item.id}', 'pageCount', parseInt(this.value, 10))"
+                                    class="w-full py-1.5 px-2.5 bg-white border border-teal-200 rounded-xl text-xs font-semibold text-slate-800 outline-none focus:border-[#0D8A8A]">
+                                    ${PAGE_COUNT_OPTIONS.map(p => `<option value="${p.value}" ${(item.pageCount || 1) === p.value ? 'selected' : ''}>${p.label}</option>`).join('')}
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 rounded-2xl p-3 border border-slate-200/80 mb-4">
+                            <p class="text-xs text-slate-600 font-body line-clamp-3 leading-relaxed">${promptText}</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-2 pt-2 border-t border-slate-100">
+                        <button type="button" onclick="openFullPromptModal('${item.id}')"
+                            class="px-3.5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition">
+                            👁️ ดูเต็ม
+                        </button>
+                        <button type="button" onclick="copyCardPrompt('${item.id}')"
+                            class="flex-grow py-2.5 px-4 rounded-xl bg-gradient-to-r from-[#0D8A8A] to-teal-600 hover:from-teal-700 hover:to-teal-800 text-white font-bold text-xs sm:text-sm shadow-sm transition transform active:scale-95 flex items-center justify-center gap-1.5">
+                            <span>📋 คัดลอกพรอมต์สื่อการสอน</span>
+                        </button>
+                    </div>
+                </article>`;
+            } else {
+                return `
+                <article class="bg-white rounded-3xl p-5 sm:p-6 shadow-md shadow-orange-100/40 border-2 ${item.isCustom ? 'border-[#F26444]' : 'border-slate-200/90'} hover:border-[#F26444]/70 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2.5">
+                            <div class="flex flex-wrap items-center gap-1.5">
+                                <span class="px-2.5 py-1 rounded-xl bg-teal-50 text-[#0D8A8A] border border-teal-200 text-xs font-bold">${item.subjectIcon} ${item.subjectName}</span>
+                                <span class="px-2.5 py-1 rounded-xl bg-orange-50 text-[#F26444] border border-orange-200 text-xs font-bold">${item.grade}</span>
+                                ${pageBadge}
+                                ${customBadge}
+                                ${thaiBadge}
+                                ${engBadge}
+                            </div>
+                            <span class="text-[11px] font-mono text-slate-400">${item.id}</span>
+                        </div>
+
+                        <h3 class="font-extrabold text-slate-800 text-base sm:text-lg leading-snug mb-1">${item.topic}</h3>
+                        ${contextPills}
+
+                        <!-- เลือกผสมกิจกรรมใบงาน 1-6 รูปแบบ -->
+                        <div class="my-3.5 bg-orange-50/40 p-3.5 rounded-2xl border border-orange-200/70">
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="text-[11px] font-extrabold text-slate-700">เลือกผสมกิจกรรม (เลือกได้ 1–6 แบบ · เลือกอยู่ ${item.wsActivities.length}/6)</span>
+                                <button type="button" onclick="randomizeCardActivities('${item.id}')"
+                                    class="px-2.5 py-1 rounded-lg bg-white hover:bg-orange-100 text-[#F26444] border border-orange-200 text-[11px] font-bold transition">
+                                    🎲 สุ่มผสม 3 กิจกรรม
+                                </button>
+                            </div>
+                            <div class="flex flex-wrap gap-1.5 max-h-28 overflow-y-auto pr-1">
+                                ${WORKSHEET_ACTIVITIES.map(act => {
+                                    const checked = item.wsActivities.includes(act.id) ? 'checked' : '';
+                                    return `
+                                    <label class="act-pill cursor-pointer select-none">
+                                        <input type="checkbox" class="hidden" ${checked} onchange="toggleCardActivity('${item.id}', '${act.id}', this)">
+                                        <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg border border-slate-200 bg-white text-[11px] font-medium text-slate-700 hover:border-teal-300 transition">
+                                            <span class="chk hidden font-bold">✓</span>${act.name}
+                                        </span>
+                                    </label>`;
+                                }).join('')}
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-3 pt-2.5 border-t border-orange-200/60">
+                                <div>
+                                    <label class="block text-[11px] font-bold text-slate-600 mb-1">สไตล์ภาพใบงาน</label>
+                                    <select onchange="updateCardField('${item.id}', 'wsStyleIdx', parseInt(this.value, 10))"
+                                        class="w-full py-1.5 px-2.5 bg-white border border-orange-200 rounded-xl text-xs font-semibold text-slate-800 outline-none">
+                                        ${WORKSHEET_STYLES.map((s, idx) => `<option value="${idx}" ${item.wsStyleIdx === idx ? 'selected' : ''}>${s}</option>`).join('')}
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-[11px] font-bold text-slate-600 mb-1">จำนวนข้อรวม</label>
+                                    <select onchange="updateCardField('${item.id}', 'wsQuestionCount', parseInt(this.value, 10))"
+                                        class="w-full py-1.5 px-2.5 bg-white border border-orange-200 rounded-xl text-xs font-semibold text-slate-800 outline-none">
+                                        ${[5, 10, 15, 20].map(n => `<option value="${n}" ${item.wsQuestionCount === n ? 'selected' : ''}>${n} ข้อ</option>`).join('')}
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-[11px] font-bold text-slate-600 mb-1">📄 จำนวนหน้า</label>
+                                    <select onchange="updateCardField('${item.id}', 'pageCount', parseInt(this.value, 10))"
+                                        class="w-full py-1.5 px-2.5 bg-white border border-orange-200 rounded-xl text-xs font-semibold text-slate-800 outline-none">
+                                        ${PAGE_COUNT_OPTIONS.map(p => `<option value="${p.value}" ${(item.pageCount || 1) === p.value ? 'selected' : ''}>${p.label}</option>`).join('')}
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-3 mt-2.5 text-[11px] font-semibold text-slate-700">
+                                <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                                    <input type="checkbox" ${item.wsIncludeAnswerKey ? 'checked' : ''} onchange="updateCardField('${item.id}', 'wsIncludeAnswerKey', this.checked)" class="rounded text-[#0D8A8A]">
+                                    <span>🔑 แนบเฉลยสำหรับครู</span>
+                                </label>
+                                <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                                    <input type="checkbox" ${item.wsThemeFrameCut ? 'checked' : ''} onchange="updateCardField('${item.id}', 'wsThemeFrameCut', this.checked)" class="rounded text-[#F26444]">
+                                    <span>✂️ กรอบเส้นปะสำหรับตัด</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-50 rounded-2xl p-3 border border-slate-200/80 mb-4">
+                            <p class="text-xs text-slate-600 font-body line-clamp-2 leading-relaxed">${promptText}</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-2 pt-2 border-t border-slate-100">
+                        <button type="button" onclick="openFullPromptModal('${item.id}')"
+                            class="px-3.5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition">
+                            👁️ ดูเต็ม
+                        </button>
+                        <button type="button" onclick="copyCardPrompt('${item.id}')"
+                            class="flex-grow py-2.5 px-4 rounded-xl bg-gradient-to-r from-[#F26444] to-orange-500 hover:from-orange-600 hover:to-orange-700 text-white font-bold text-xs sm:text-sm shadow-sm transition transform active:scale-95 flex items-center justify-center gap-1.5">
+                            <span>📋 คัดลอกพรอมต์ใบงาน</span>
+                        </button>
+                    </div>
+                </article>`;
+            }
+        }
+
+        function updateCardField(id, field, value) {
+            const item = getCardById(id);
+            if (!item) return;
+            item[field] = value;
+            renderCards();
+        }
+
+        function toggleCardActivity(id, actId, checkboxEl) {
+            const item = getCardById(id);
+            if (!item) return;
+            if (checkboxEl.checked) {
+                if (item.wsActivities.length >= 6) {
+                    checkboxEl.checked = false;
+                    showToast('เลือกได้สูงสุด 6 กิจกรรมต่อ 1 ใบงาน', 'กรุณายกเลิกบางกิจกรรมก่อนเลือกเพิ่มครับ');
+                    return;
+                }
+                if (!item.wsActivities.includes(actId)) item.wsActivities.push(actId);
+            } else {
+                if (item.wsActivities.length <= 1) {
+                    checkboxEl.checked = true;
+                    showToast('ต้องเลือกอย่างน้อย 1 กิจกรรม', 'ใบงานจำเป็นต้องมีกิจกรรมอย่างน้อย 1 รูปแบบครับ');
+                    return;
+                }
+                item.wsActivities = item.wsActivities.filter(x => x !== actId);
+            }
+            renderCards();
+        }
+
+        function randomizeCardActivities(id) {
+            const item = getCardById(id);
+            if (!item) return;
+            const shuffled = [...WORKSHEET_ACTIVITIES].sort(() => Math.random() - 0.5);
+            item.wsActivities = shuffled.slice(0, 3).map(a => a.id);
+            renderCards();
+            showToast('สุ่มผสม 3 กิจกรรมใหม่แล้ว!', item.wsActivities.map(aid => WORKSHEET_ACTIVITIES.find(a => a.id === aid).name).join(' + '));
+        }
+
+        // =====================================================================
+        // 8. MODAL ดูเต็ม & ระบบคัดลอกลงคลิปบอร์ด
+        // =====================================================================
+        function openFullPromptModal(id) {
+            const item = getCardById(id);
+            if (!item) return;
+            currentModalPromptText = generatePromptForItem(item);
+            document.getElementById('modalBadge').textContent = `${item.subjectIcon} ${item.subjectName} · ${item.grade}`;
+            document.getElementById('modalTitle').textContent = item.topic;
+            document.getElementById('modalPromptBody').textContent = currentModalPromptText;
+            const modal = document.getElementById('fullPromptModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeFullModal() {
+            const modal = document.getElementById('fullPromptModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function copyCardPrompt(id) {
+            const item = getCardById(id);
+            if (!item) return;
+            const txt = generatePromptForItem(item);
+            copyTextToClipboard(txt, 'คัดลอกพรอมต์เรียบร้อยแล้ว!', `พร้อมวางสร้าง${state.studioMode === 'media' ? 'สื่อการสอน' : 'ใบงาน'}เรื่อง "${item.topic}"`);
+        }
+
+        function copyFromFullModal() {
+            if (!currentModalPromptText) return;
+            copyTextToClipboard(currentModalPromptText, 'คัดลอกพรอมต์ฉบับเต็มแล้ว!', 'นำไปวางใน AI สร้างภาพที่รองรับภาษาไทยได้ทันที');
+        }
+
+        function copyTextToClipboard(text, title, subtitle) {
+            const fallbackCopy = () => {
+                const ta = document.createElement('textarea');
+                ta.value = text;
+                ta.setAttribute('readonly', '');
+                ta.style.position = 'fixed';
+                ta.style.left = '-9999px';
+                ta.style.top = '0';
+                document.body.appendChild(ta);
+                ta.focus();
+                ta.select();
+                try {
+                    document.execCommand('copy');
+                } catch (err) {}
+                document.body.removeChild(ta);
+                showToast(title, subtitle);
+            };
+
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(text)
+                    .then(() => showToast(title, subtitle))
+                    .catch(() => fallbackCopy());
+            } else {
+                fallbackCopy();
+            }
+        }
+
+        let toastTimer = null;
+        function showToast(title, subtitle) {
+            const toast = document.getElementById('toastNotification');
+            document.getElementById('toastTitle').textContent = title;
+            document.getElementById('toastSub').textContent = subtitle;
+            toast.classList.remove('translate-y-24', 'opacity-0');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => {
+                toast.classList.add('translate-y-24', 'opacity-0');
+            }, 3000);
+        }
+
+        // =====================================================================
+        // 9. INITIALIZATION
+        // =====================================================================
+        document.addEventListener('DOMContentLoaded', () => {
+            setupPinInputs();
+            try {
+                if (localStorage.getItem('plearn_unlocked') === 'true') {
+                    const gate = document.getElementById('accessGate');
+                    gate.classList.add('hidden');
+                }
+            } catch (err) {}
+
+            buildPromptDatabase();
+            populateFilterDropdowns();
+            applyFilters();
+        });
+    </script>
+</body>
+</html>
