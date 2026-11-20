@@ -683,7 +683,7 @@
         </div>
     </footer>
 
-    
+    <script>
         // =====================================================================
         // 1. ระบบความปลอดภัย Checksum Multi-Code 6 หลัก & ทางเข้าลับแอดมิน (PIN: 1689)
         // =====================================================================
@@ -871,45 +871,8 @@
             }
         }
 
-        function openAdminPinModal() {
-            document.getElementById('adminPinInput').value = '';
-            document.getElementById('adminPinError').classList.add('hidden');
-            const m = document.getElementById('adminPinModal');
-            m.classList.remove('hidden');
-            m.classList.add('flex');
-            setTimeout(() => document.getElementById('adminPinInput').focus(), 100);
-        }
-
-        function closeAdminPinModal() {
-            const m = document.getElementById('adminPinModal');
-            m.classList.add('hidden');
-            m.classList.remove('flex');
-        }
-
-        function openAdminModal() {
-            generateNewCustomerCode();
-            const m = document.getElementById('adminCodeModal');
-            m.classList.remove('hidden');
-            m.classList.add('flex');
-        }
-
-        function closeAdminModal() {
-            const m = document.getElementById('adminCodeModal');
-            m.classList.add('hidden');
-            m.classList.remove('flex');
-        }
-
-        function generateNewCustomerCode() {
-            document.getElementById('generatedCodeDisplay').textContent = generateChecksumPin();
-        }
-
-        function copyGeneratedCode() {
-            const code = document.getElementById('generatedCodeDisplay').textContent;
-            copyTextToClipboard(code, `คัดลอกรหัสลูกค้า ${code} แล้ว!`, 'ส่งรหัสนี้ให้ลูกค้าเพื่อเข้าใช้งานคลัง Prompt ได้ทันที');
-        }
-
         // =====================================================================
-        // 2. ฐานข้อมูลโหมดการพิมพ์ กิจกรรมใบงาน สไตล์สื่อการสอน และมาตรฐานราชบัณฑิตยสถาน
+        // 2. ฐานข้อมูลโหมดการพิมพ์ กิจกรรมใบงาน สไตล์สื่อการสอน และกติกาคุมตัวอักษร
         // =====================================================================
         const PRINT_MODES = {
             bw_clean: {
@@ -926,16 +889,18 @@
             }
         };
 
+        const ANTI_GARBLED_TEXT_RULE = `[กติกาคุมตัวอักษรและเลย์เอาต์ไม่ให้เพี้ยน (บังคับใช้ทุกชิ้นงาน)]
+- สะกดคำถูกต้อง ชัดเจน อ่านง่าย ห้ามพิมพ์คำซ้ำซ้อน พยัญชนะซ้อน หรือแต่งตัวอักษร/สัญลักษณ์แปลกๆ แทรก
+- หัวข้อหลักมีเพียง 1 บรรทัด จัดวางให้อยู่ในกรอบชัดเจน ห้ามวางตัวอักษรทับเส้นขอบหรือภาพประกอบ
+- เว้นระยะห่างและพื้นที่ว่างรอบข้อความให้เพียงพอ ไม่เบียดหรือล้นกรอบ
+- หากมีข้อความยาวหลายบรรทัด ให้เว้นพื้นที่ว่างสีขาวสะอาดเพื่อให้ครูนำไปพิมพ์ข้อความจริงทับใน Canva หรือ PowerPoint ได้สะดวก`;
+
         const THAI_STANDARD_RULE = `คำสั่งเพิ่มเติมด้านภาษาไทย (บังคับใช้):
 ให้ใช้ภาษาไทยที่เป็นทางการ ถูกต้องตามหลักอักขรวิธี การสะกดคำ การใช้สระ วรรณยุกต์ และเครื่องหมายวรรคตอน โดยยึดตาม "พจนานุกรม ฉบับราชบัณฑิตยสถาน พ.ศ. 2554" และ "หลักเกณฑ์การทับศัพท์และศัพท์บัญญัติของสำนักงานราชบัณฑิตยสภา" เป็นมาตรฐานสูงสุด
 ข้อห้ามเด็ดขาด:
 1. ห้ามเขียนคำผิด สระลอย วรรณยุกต์ตกหล่น หรือใช้ภาษาวิบัติ/ภาษาแช็ต
 2. ห้ามใช้คำศัพท์ภาษาอังกฤษปนภาษาไทยโดยไม่จำเป็น (ให้ใช้ศัพท์บัญญัติแทน หากเป็นคำเฉพาะให้วงเล็บภาษาอังกฤษกำกับครั้งแรก)
-3. ก่อนสร้างภาพ ให้ตรวจสอบความถูกต้องของการสะกดคำทุกคำอย่างละเอียดอีกครั้ง
-กติกาคุมตัวอักษรและเลย์เอาต์: ใช้ภาษาไทยสะกดถูกต้อง ชัดเจน อ่านง่าย ห้ามพิมพ์คำซ้ำซ้อนหรือแต่งตัวอักษรแปลกๆ แทรก หัวข้อหลักมีเพียง 1 บรรทัด จัดวางให้อยู่ในกรอบชัดเจน ห้ามวางตัวอักษรทับเส้นขอบหรือภาพประกอบ เว้นระยะห่างและพื้นที่ว่างรอบข้อความให้เพียงพอ
-- การสะกดคำและความหมาย: พจนานุกรม ฉบับราชบัณฑิตยสถาน พ.ศ. 2554 (dictionary.orst.go.th)
-- คำทับศัพท์และศัพท์วิชาการ: ฐานข้อมูลศัพท์บัญญัติและคำทับศัพท์ สำนักงานราชบัณฑิตยสภา (coined-word.orst.go.th และ transliteration.orst.go.th)
-- การใช้เครื่องหมายวรรคตอน: หลักเกณฑ์การใช้เครื่องหมายวรรคตอนและเครื่องหมายอื่น ๆ ฉบับราชบัณฑิตยสถาน`;
+3. ก่อนสร้างภาพ ให้ตรวจสอบความถูกต้องของการสะกดคำทุกคำอย่างละเอียดอีกครั้ง`;
 
         const PAGE_COUNT_OPTIONS = [
             { value: 1, label: '1 หน้า (A4 ฉบับกระชับ)' },
@@ -965,7 +930,7 @@
             return `กฎเหล็กเฉพาะวิชาภาษาอังกฤษ (STRICT ENGLISH-ONLY OUTPUT BY GRADE LEVEL — บังคับใช้ 100%):
 1. ห้ามมีภาษาไทยปรากฏบนชิ้นงานเด็ดขาด (NO THAI TEXT ALLOWED ON OUTPUT): ข้อความทุกตัวอักษรที่ปรากฏบนสื่อการสอน ใบความรู้ ใบงาน หัวข้อเรื่อง คำชี้แจง (Instructions) ช่องกรอกข้อมูลนักเรียน (Name / Class / No.) ตัวอย่าง (Example) โจทย์คำถาม ตัวเลือก (A, B, C, D) ป้ายกำกับ และเฉลย (Answer Key) ต้องเป็นภาษาอังกฤษล้วน 100% เท่านั้น
 2. มาตรฐานระดับภาษาตามช่วงชั้น (${grade}):
-   - ${levelSpec}
+  - ${levelSpec}
 3. การตรวจสอบความถูกต้อง: ตรวจสอบไวยากรณ์ (Grammar) การสะกดคำ (Spelling) และเครื่องหมายวรรคตอนภาษาอังกฤษให้ถูกต้องตามมาตรฐานสากล 100% ก่อนสร้างผลงาน`;
         }
 
@@ -1521,7 +1486,6 @@
                 return true;
             });
 
-            // ระบบสร้างการ์ดหัวข้อใหม่ทันใจ (Custom Topic Instant Card) เมื่อพิมพ์ค้นหาเรื่องใหม่
             CUSTOM_TOPIC_ITEM = null;
             if (state.searchQuery.length > 0) {
                 const exactExists = FILTERED_PROMPTS.some(p => p.topic.toLowerCase() === q);
@@ -1580,7 +1544,7 @@
         }
 
         // =====================================================================
-        // 6. ฟังก์ชันประกอบสูตร Prompt (รวมข้อมูลครู + สถานการณ์ + บริบทวงสังคม + ราชบัณฑิตฯ)
+        // 6. ฟังก์ชันประกอบสูตร Prompt (รวมข้อมูลครู + สถานการณ์ + บริบทวงสังคม + กติกาคุมตัวอักษร)
         // =====================================================================
         function buildContextDirectivesBlock() {
             const blocks = [];
@@ -1667,7 +1631,9 @@
 - ตัวละครนำเรื่อง (Mascot): ${charName} คอยชี้จุดสำคัญและสร้างบรรยากาศการเรียนรู้ที่เป็นมิตร
 
 [มาตรฐานความคมชัดและภาษา]
-- ตัวอักษรคมชัด สะกดถูกต้อง 100% เว้นระยะห่างสมดุล อ่านง่ายสบายตา ไม่ซ้อนทับภาพประกอบ${contextBlock}${englishRuleBlock}${thaiRuleBlock}`;
+- ตัวอักษรคมชัด สะกดถูกต้อง 100% เว้นระยะห่างสมดุล อ่านง่ายสบายตา ไม่ซ้อนทับภาพประกอบ
+
+${ANTI_GARBLED_TEXT_RULE}${contextBlock}${englishRuleBlock}${thaiRuleBlock}`;
             } else {
                 const selectedActs = item.wsActivities
                     .map(id => WORKSHEET_ACTIVITIES.find(a => a.id === id))
@@ -1704,7 +1670,9 @@ ${actInstructions}
 - ${printInfo.worksheetRule}
 ${answerKeyLine}
 ${frameCutLine}
-- ตัวอักษรชัดเจน อ่านง่าย สะกดถูกต้อง 100% ช่องว่างสำหรับเขียนคำตอบกว้างพอเหมาะสำหรับนักเรียนชั้น ${item.grade}${contextBlock}${englishRuleBlock}${thaiRuleBlock}`;
+- ตัวอักษรชัดเจน อ่านง่าย สะกดถูกต้อง 100% ช่องว่างสำหรับเขียนคำตอบกว้างพอเหมาะสำหรับนักเรียนชั้น ${item.grade}
+
+${ANTI_GARBLED_TEXT_RULE}${contextBlock}${englishRuleBlock}${thaiRuleBlock}`;
             }
         }
 
@@ -1762,13 +1730,13 @@ ${frameCutLine}
                 ? `<span class="px-2.5 py-0.5 rounded-full bg-gradient-to-r from-[#F26444] to-amber-500 text-white text-[11px] font-bold shadow-sm">✨ หัวข้อสร้างใหม่ตามคำค้นหา</span>`
                 : '';
             const thaiBadge = item.subjectId === 'thai'
-                ? `<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-bold">🏛️ มาตรฐานราชบัณฑิตฯ</span>`
+                ? `<span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-bold">🏛️ มาตรฐานราชบัณฑิตฯ</span>`
                 : '';
             const engBadge = item.subjectId === 'english'
-                ? `<span class="px-2 py-0.5 rounded-full bg-sky-50 text-sky-700 border border-sky-200 text-[10px] font-bold">🇬🇧 English-Only 100% (${item.grade})</span>`
+                ? `<span class="px-2.5 py-0.5 rounded-full bg-sky-50 text-sky-700 border border-sky-200 text-[10px] font-bold">🇬🇧 English-Only 100% (${item.grade})</span>`
                 : '';
             const pageBadge = (item.pageCount && item.pageCount > 1)
-                ? `<span class="px-2 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200 text-[10px] font-bold">📄 ${item.pageCount} หน้า</span>`
+                ? `<span class="px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200 text-[10px] font-bold">📄 ${item.pageCount} หน้า</span>`
                 : '';
             const contextPills = getActiveContextPillsHTML();
 
